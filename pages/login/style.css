@@ -1,46 +1,75 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&amp;display=swap");
+@import url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7SUc.woff2);
+@import url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2);
+@import url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap);
+:root{
+    --color-hover:rgb(219, 216, 216);
+    --width:500px;
+    --height: 650px;
+}
 *{
     box-sizing: border-box;
 }
 
 body{
-    background: linear-gradient(90deg, #131086, #b621f3);
-    padding: 20px;
+    background: linear-gradient(90deg,rgba(76, 198, 207, 0.5),rgba(63, 195, 56, 0.5));
+    font-family: 'Inter';
 }
 
 .Login_container{
     background-color: #fff;
+    width: var(--width);
+    height: var(--height);
+    margin: auto;
+    border-radius: 30px;
+}
+.Login_header{
+    font-size: 20px;
     display: flex;
-}
-
-.login_header {
-    margin-bottom: 100px;
-}
-
-.login_header_title {
-    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     margin-bottom: 10px;
 }
-  
-.Login_body{
-
+.Login_headerTitle{
+    font-family: 'Dancing Script';
 }
-
+.Login_logo{
+    margin-top: 10px;
+}
+.Login_body{
+    text-align: center;
+}
 .Login_mainStep{
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    
+    flex-direction: column;
+}
+.Login_button{
+    background-color: #fff;
+    border: 2px solid var(--color-hover);
+    width: 340px;
+    height: 50px;
+    border-radius: 100px;
+    margin-bottom: 15px;
+    position: relative;   
+}
+.Button_icon{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform:translateY(-50%);
+}
+.Button_content{
+    text-align: center;
+    line-height: 50px;
+}
+.Login_footer{
+    text-align: center;
+    margin-top: 60px;
+    line-height: 30px;
 }
 
-.Login_button{
-    margin-top: 24px;
-    padding-left: 16px;
-    border-radius: 100px;
-}
-.Login_dontHaveAccount{
-    padding: 24px;
-    margin-top: 14px;
+.Login_button:hover{
+    background-color: var(--color-hover);
 }
