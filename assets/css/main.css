@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg,rgba(76, 198, 207, 0.5),rgba(63, 195, 56, 0.5));
+}
+
+.Login_container{
+    background-color: #fff;
+    width: 550px;
+    height: 650px;
+    margin: auto auto;
+}
+.Login_header{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Login_body{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    text-align: center;
+}
+.Login_mainStep{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
