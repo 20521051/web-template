@@ -1,0 +1,44 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
+@font-face {
+    font-family: 'Inter';
+    src: url(/assets/fonts/Inter.ttf);
+}
+@font-face {
+    font-family: 'DancingScript';
+    src: url(/assets/fonts/DancingScript.ttf);
+}
+:root{
+    --text-color: #333;
+    --while-color: #fff;
+    --black-color: #000;
+}
+*{
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    line-height: 2rem; 
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    color: var(--text-color);
+    /* Couldn't copy the text */
+    -moz-user-select: none !important;
+    -webkit-user-select: none!important;
+    -khtml-user-select: none!important;
+    -moz-user-select: none!important;
+    -ms-user-select: none!important;
+    user-select: none!important;
+}
+/* class define to responsive */
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-width{
+    width: 100%;
+}
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+}

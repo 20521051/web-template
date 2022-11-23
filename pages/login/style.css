@@ -1,37 +1,22 @@
-@import url(https://fonts.gstatic.com/s/inter/v12/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7SUc.woff2);
-@import url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2);
-@import url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap);
 :root{
     --color-hover:rgb(219, 216, 216);
-    --width:500px;
-    --height: 650px;
-}
-*{
-    box-sizing: border-box;
+    --width: 50rem;
+    --height: 65rem;
 }
 
 body{
     background: linear-gradient(90deg,rgba(76, 198, 207, 0.5),rgba(63, 195, 56, 0.5));
-    font-family: 'Inter';
-
-    -moz-user-select: none !important;
-    /* -webkit-touch-callout: none!important; */
-    -webkit-user-select: none!important;
-    -khtml-user-select: none!important;
-    -moz-user-select: none!important;
-    -ms-user-select: none!important;
-    user-select: none!important;
 }
-
+/* Login */
 .Login_container{
-    background-color: #fff;
+    background-color: var(--while-color);
     width: var(--width);
     height: var(--height);
-    margin: auto;
+    margin: 2rem auto;
     border-radius: 30px;
 }
 .Login_header{
-    font-size: 20px;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,45 +24,109 @@ body{
     margin-bottom: 10px;
 }
 .Login_headerTitle{
-    font-family: 'Dancing Script';
+    font-family: 'DancingScript';
 }
 .Login_logo{
     margin-top: 10px;
 }
 .Login_body{
     text-align: center;
+    font-size: 1.4rem;
 }
 .Login_mainStep{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 1.5rem;
 }
 .Login_button{
     background-color: #fff;
     border: 2px solid var(--color-hover);
-    width: 340px;
-    height: 50px;
+    width: 34rem;
+    height: 5rem;
     border-radius: 100px;
-    margin-bottom: 15px;
     position: relative;   
 }
-.Button_icon{
+.Login_buttonIcon{
     position: absolute;
     top: 50%;
-    left: 15px;
+    left: 1.5rem;
     transform:translateY(-50%);
 }
-.Button_content{
+.Login_buttonContent{   
     text-align: center;
-    line-height: 50px;
+    line-height: calc(5rem - 0.5rem);
+}
+.Login_dontHaveAccount{
+    margin-top: 3rem;
 }
 .Login_footer{
     text-align: center;
     margin-top: 60px;
-    line-height: 30px;
+}
+.Login_button:hover{
+    background-color: var(--color-hover);
 }
 
-.Login_button:hover{
+/* Register */
+.Register_container{
+    background-color: var(--while-color);
+    width: var(--width);
+    height: var(--height);
+    margin: 2rem auto;
+    border-radius: 30px;
+}
+.Register_header{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.Register_headerTitle{
+    font-family: 'DancingScript';
+}
+.Register_logo{
+    margin-top: 10px;
+}
+.Register_body{
+    text-align: center;
+    font-size: 1.4rem;
+}
+.Register_mainStep{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.Register_button{
+    background-color: #fff;
+    border: 2px solid var(--color-hover);
+    width: 34rem;
+    height: 5rem;
+    border-radius: 100px;
+    position: relative;   
+}
+.Register_buttonIcon{
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+    transform:translateY(-50%);
+}
+.Register_buttonContent{   
+    text-align: center;
+    line-height: calc(5rem - 0.5rem);
+}
+.Register_dontHaveAccount{
+    margin-top: 3rem;
+}
+.Register_footer{
+    text-align: center;
+    margin-top: 60px;
+}
+.Register_button:hover{
     background-color: var(--color-hover);
 }
