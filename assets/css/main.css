@@ -1,0 +1,16 @@
+header{
+    border: 2px solid var(--color-hover);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Header_logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.SearchBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
