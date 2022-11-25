@@ -8,6 +8,7 @@
     src: url(/assets/fonts/DancingScript.ttf);
 }
 :root{
+    --color-hover:rgb(219, 216, 216);
     --text-color: #333;
     --while-color: #fff;
     --black-color: #000;
