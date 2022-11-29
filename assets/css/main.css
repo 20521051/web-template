@@ -174,3 +174,49 @@ header{
 .sidebar.open .toggle i {
     transform: rotateY(180deg);
 }
+
+/* dark */
+header{
+    background-color: #333;
+}
+.sidebar{
+    background-color: #333;
+}
+footer{
+    background-color: #333;
+    width: 100%;
+    height: 100px;
+}
+section{
+    background-color: aqua;
+    display: flex;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+}
+.slideshow{
+    width: 1000px;
+    height: 100px;
+    background-color: #fff;
+}
+
+.freeProduces{
+    width: 1000px;
+    height: 100px;
+    background-color: #fff;
+}
+
+.paidProduces{
+    width: 1000px;
+    height: 100px;
+    background-color: #fff;
+}
+.maincontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
