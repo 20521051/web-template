@@ -13,7 +13,7 @@ html{
 }
 /* Login */
 .Login_container{
-  border: 2px solid var(--color-hover);
+  border: 2px solid var(--hover-color);
   background-color: var(--while-color);
   width: var(--width);
   height: var(--height);
@@ -46,7 +46,7 @@ html{
 }
 .Login_button{
   background-color: #fff;
-  border: 2px solid var(--color-hover);
+  border: 2px solid var(--hover-color);
   width: 33rem;
   height: 5rem;
   border-radius: 100px;
@@ -70,5 +70,5 @@ html{
   margin-top: 6rem;
 }
 .Login_button:hover{
-  background-color: var(--color-hover);
+  background-color: var(--hover-color);
 }

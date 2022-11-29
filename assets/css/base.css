@@ -8,10 +8,13 @@
     src: url(/assets/fonts/DancingScript.ttf);
 }
 :root{
-    --color-hover:rgb(219, 216, 216);
+    --hover-color:rgb(219, 216, 216);
     --text-color: #333;
     --while-color: #fff;
     --black-color: #000;
+    --star-color: rgba(76, 198, 207, 0.5);
+    --end-color: rgba(63, 195, 56, 0.5);
+    
 }
 *{
     box-sizing: inherit;
