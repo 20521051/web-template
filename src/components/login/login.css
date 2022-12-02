@@ -1,8 +1,21 @@
-:root{
-  --width: 45rem;
-  --height: 62rem;
+/* Login */
+@media only screen and (max-width: 250px)
+{
+  htmol{
+    font-size: 20%;
+  }
+}
+@media only screen and (max-width: 500px)
+{
+  htmol{
+    font-size: 25%;
+  }
 }
 
+:root{
+  --width: 52rem;
+  --height: 62rem;
+}
 html{
   background: linear-gradient(90deg,rgba(76, 198, 207, 0.5),rgba(63, 195, 56, 0.5));
   display: flex;
@@ -11,15 +24,24 @@ html{
   width: 100%;
   height: 100%;
 }
-/* Login */
-.login_container{
+#login_container{
   border: 2px solid var(--hover-color);
   background-color: var(--while-color);
-  width: var(--width);
-  height: var(--height);
   border-radius: 30px;
 }
-.login_header{
+.login_headerTitle{
+  font-family: 'DancingScript','Inter', sans-serif;
+}
+.login_button:hover{
+  background-color: var(--hover-color);
+}
+.login_button{
+  background-color: #fff;
+  border: 2px solid var(--hover-color);
+  border-radius: 100px;  
+}
+/* test */
+#login_header{
   font-size: 2rem;
   display: flex;
   align-items: center;
@@ -27,13 +49,10 @@ html{
   flex-direction: column;
   margin-bottom: 1rem;
 }
-.login_headerTitle{
-  font-family: 'DancingScript','Inter', sans-serif;
-}
 .login_headerLogo{
   margin-top: 1rem;
 }
-.login_body{
+#login_body{
   text-align: center;
   font-size: 1.4rem;
 }
@@ -45,11 +64,8 @@ html{
   gap: 1.5rem;
 }
 .login_button{
-  background-color: #fff;
-  border: 2px solid var(--hover-color);
   width: 33rem;
   height: 5rem;
-  border-radius: 100px;
   position: relative;   
 }
 .login_buttonIcon{
@@ -65,10 +81,11 @@ html{
 .login_dontHaveAccount{
   margin-top: 3rem;
 }
-.login_footer{
+#login_footer{
   text-align: center;
   margin-top: 6rem;
 }
-.login_button:hover{
-  background-color: var(--hover-color);
+#login_container{
+  width: var(--width);
+  height: var(--height);
 }
