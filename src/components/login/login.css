@@ -36,7 +36,7 @@ html{
   background-color: var(--hover-color);
 }
 .login_button{
-  background-color: #fff;
+  background-color: var(--while-color);
   border: 2px solid var(--hover-color);
   border-radius: 100px;  
 }

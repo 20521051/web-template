@@ -1,5 +1,5 @@
 header{
-    border: 2px solid var(--color-hover);
+    border: 2px solid var(--hover-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -188,7 +188,7 @@ footer{
     height: 100px;
 }
 section{
-    background-color: aqua;
+    background-color: rgb(163, 248, 248);
     display: flex;
 }
 
@@ -202,10 +202,13 @@ section{
     background-color: #fff;
 }
 
+
+
 .freeProduces{
     width: 1000px;
-    height: 100px;
+    height: 300px;
     background-color: #fff;
+    display: grid;
 }
 
 .paidProduces{
@@ -218,5 +221,22 @@ section{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+/* free */
+.product{
+    width: 25rem;
+    height: 25rem;
+    background-color: var(--star-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:0.2rem solid var(--hover-color);
+}
+.product_img{
+    border-radius: 2.5rem;
+    width: 24rem;
+    height: 20rem;
+    background-color: var(--while-color);
+
 
 }
