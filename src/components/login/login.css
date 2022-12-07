@@ -1,13 +1,13 @@
 /* Login */
 @media only screen and (max-width: 250px)
 {
-  htmol{
+  html{
     font-size: 20%;
   }
 }
 @media only screen and (max-width: 500px)
 {
-  htmol{
+  html{
     font-size: 25%;
   }
 }
