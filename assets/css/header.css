@@ -1,0 +1,34 @@
+.bg {
+    background-color: aquamarine;
+}
+
+.navbar_bg {
+    background-color: aqua;
+}
+
+.login_button {
+    float: right;
+    border: 0px;
+    border-radius: 25px;
+    background-color: rgba(76, 198, 207, 0.5);
+}
+
+.login_button:hover {
+    background-color: rgba(76, 198, 207, 1);
+}
+
+.a_vw {
+    width: 40vw;
+}
+
+.search_vw {
+    width: 25vw;
+}
+
+.div_vw {
+    width: 75vw;
+}
+
+.icon {
+    padding-top: 0.4vh;
+}
