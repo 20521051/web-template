@@ -5,170 +5,222 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/base.css">
     <title>FWT | Pro Web template</title>
 
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
 </head>
 
 <body>
     <div id="main">
-        <header>
-            <div class="Header_logo">
-                <a href="#" class="Header_logoIcon">
-                    <img src="/assets/img/FWT-mini.png" alt="PWT-logo">
-                </a>
-                <h4 class="Header_logoContent">
-                    Pro Web template
-                </h4>
-            </div>
-            <div class="SearchBar">
-                <div class="SeachBar_icon">
-                    <img src="https://fullstack.edu.vn/static/media/search.9bd3926522ea0937310c.svg" alt="search-icon">
-                </div>
-                <input type="text" class="SearchBar_input" spellcheck="false"
-                    placeholder="Tìm kiếm tên, dạng, thể loại, ... của template">
-            </div>
-            <div class="Header_action">
-                <a href="#" class="Header_acctionLogin">
-                    Login
-                </a>
-            </div>
-            
 
-        </header>
+        <nav class="sidebar close">
+            <header>
+                <div class="image-text">
+                    <span class="image">
+                        <img src="https://tuoitre.uit.edu.vn/wp-content/uploads/2015/07/logo-uit.png" alt="logo">
+                    </span>
 
-        <section>
-            <div class="sidebar">
-                <div class="toggle">
-                    <i class="bx bx-chevron-right"></i>
-                </div>
-                <nav>
-                    <div class="nav-title">
-                        Management
+                    <div class="text logo-text">
+                        <span class="name">Coding Labs</span>
+                        <span class="profession">Web developer</span>
                     </div>
+                </div>
 
-                    <ul>
-                        <li class="nav-item active">
-                            <i class="bx bxs-dashboard"></i>
-                            <span>Home</span>
+                <i class='bx bx-chevron-right toggle'></i>
+            </header>
+            <div class="menu-bar">
+                <div class="menu">
+
+                    <!-- <li class="search-box">
+                        <i class='bx bx-search icon'></i>
+                        <input type="text" placeholder="Search...">
+                    </li> -->
+
+                    <ul class="menu-links">
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bx-home-alt icon'></i>
+                                <span class="text nav-text">Home</span>
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <i class="bx bxs-bar-chart-alt-2"></i>
-                            <span>Shop</span>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bx-bar-chart-alt-2 icon'></i>
+                                <span class="text nav-text">Shop</span>
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <i class="bx bxs-wallet"></i>
-                            <span>Services</span>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bx-bell icon'></i>
+                                <span class="text nav-text">Notifications</span>
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <i class="bx bxs-bell"></i>
-                            <span>About</span>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bx-heart icon'></i>
+                                <span class="text nav-text">Contact</span>
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <i class="bx bxs-cog"></i>
-                            <span>Settings</span>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bx-wallet icon'></i>
+                                <span class="text nav-text">Wallets</span>
+                            </a>
                         </li>
+
                     </ul>
-                    <hr>
-                    <div class="nav-title">
-                        Supports
+                </div>
+
+                <div class="bottom-content">
+                    <li class="">
+                        <a href="#">
+                            <i class='bx bx-log-out icon'></i>
+                            <span class="text nav-text">Logout</span>
+                        </a>
+                    </li>
+
+                    <li class="mode">
+                        <div class="sun-moon">
+                            <i class='bx bx-moon icon moon'></i>
+                            <i class='bx bx-sun icon sun'></i>
+                        </div>
+                        <span class="mode-text text">Dark mode</span>
+
+                        <div class="toggle-switch">
+                            <span class="switch"></span>
+                        </div>
+                    </li>
+
+                </div>
+            </div>
+        </nav>
+
+        <section class="home">
+            <header class="header">
+                <nav class="navbar navbar-expand-sm navbar-dark bg">
+                    <div class="container-fluid navbar_bg">
+                        <a class="navbar-brand a_vw" href="#">
+                            <img src="/assets/img/FWT.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+                            Pro
+                            Web Templates
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#mynavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="mynavbar">
+                            <form class="d-flex ">
+                                <div class="icon">
+                                    <img src="/assets/img/search-logo.png" alt="search-icon">
+                                </div>
+                                <div class="div_vw">
+                                    <input class="form-control me-2 search_vw" type="text"
+                                        placeholder="Tìm kiếm tên, dạng, thể loại... của template">
+                                </div>
+                                <button class="btn btn-primary login_button" type="button">Login</button>
+                            </form>
+                        </div>
                     </div>
-
-                    <ul>
-                        <li class="nav-item">
-                            <i class="bx bxs-help-circle"></i>
-                            <span>Get Help</span>
-                        </li>
-                        <li class="nav-item">
-                            <i class="bx bxs-message-dots"></i>
-                            <span>Send Feedback</span>
-                        </li>
-                    </ul>
                 </nav>
-            </div>
+
+            </header>
             <div class="maincontent">
                 <div class="slideshow">
-
-                </div>
-                <div class="freeProduces">
-                    <div class="product free_product01">
-                        <div class="product_img free_product01Img"></div>
-                        <p class="product_content free_product01Content">product</p>
-
+                    <div class="slideshow-container">
+                        <!-- Kết hợp hình ảnh và nội dung cho mội phần tử trong slideshow-->
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="https://images.pexels.com/photos/1632790/pexels-photo-1632790.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                style="width:100%">
+                            <div class="text">Nội Dung 1</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="https://images.pexels.com/photos/1581026/pexels-photo-1581026.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                style="width:100%">
+                            <div class="text">Nội Dung 2</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="https://images.pexels.com/photos/2582546/pexels-photo-2582546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                style="width:100%">
+                            <div class="text">Nội Dung 3</div>
+                        </div>
+                        <!-- Nút điều khiển mũi tên-->
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
                     </div>
-                    <div class="product free_product02">
-                        <img src="" alt="">
-                        <span>product</span>
-
-                    </div>
-                    <div class="product free_product03">
-                        <img src="" alt="">
-                        <span>product</span>
-
-                    </div>
-                    <div class="product free_product04">
-                        <img src="" alt="">
-                        <span>product</span>
-
-                    </div>
-                    <div class="product free_product05">
-                        <img src="" alt="">
-                        <span>product</span>
-
-                    </div>
-                    <div class="product free_product06">
-                        <img src="" alt="">
-                        <span>product</span>
-
-                    </div>
-                    <div class="product free_product07">
-                        <img src="" alt="">
-                        <span>product</span>
-
-                    </div>
-                    <div class="product free_product08">
-                        <img src="" alt="">
-                        <span>product</span>
-
-                    </div>
-                    <div class="product free_product09">
-                        <img src="" alt="">
-                        <span>product</span>
-
-                    </div>
-                    <div class="product free_product10">
-                        <img src="" alt="">
-                        <span>product</span>
-
-                    </div>
-                    <div class="product free_product11">
-                        <img src="" alt="">
-                        <span>product</span>
-
-                    </div>
-                    <div class="product free_product12">
-                        <img src="" alt="">
-                        <span>product</span>
-
+                    <br>
+                    <!-- Nút tròn điều khiển slideshow-->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
                     </div>
                 </div>
-                <div class="paidProduces">
+                <div class="free">
+
+                </div>
+                <div class="paid">
 
                 </div>
             </div>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>FWT</h4>
+                            <ul>
+                                <li><a href="">About us</a></li>
+                                <li><a href="">Our services</a></li>
+                                <li><a href="">Privacy policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Get Help</h4>
+                            <ul>
+                                <li><a href="">FAQ</a></li>
+                                <li><a href="">Shipping</a></li>
+                                <li><a href="">Returns</a></li>
+                                <li><a href="">Order Status</a></li>
+                                <li><a href="">Payment options</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Product</h4>
+                            <ul>
+                                <li><a href="">Paid product</a></li>
+                                <li><a href="">Free product</a></li>
+                                <li><a href="">Featured products</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Follow Us</h4>
+                            <div class="social-links">
+                                <a href=""><i class="fa-brands fa-facebook" style="font-size: 2em"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter" style="font-size: 2em"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram" style="font-size: 2em"></i></a>
+                                <a href=""><i class="fa-brands fa-discord" style="font-size: 2em"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </section>
-
-        <footer>
-
-        </footer>
     </div>
 
-    <script type="text/javascript" src="/assets/script/main.js"></script>
 
+    <script src="/assets/script/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

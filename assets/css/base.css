@@ -14,6 +14,9 @@
     --black-color: #000;
     --star-color: rgba(76, 198, 207, 0.5);
     --end-color: rgba(63, 195, 56, 0.5);
+
+    --font-text:'Inter', sans-serif;
+    --font-header:'DancingScript';
     
 }
 *{
@@ -34,15 +37,3 @@ html{
     user-select: none!important;
 }
 /* class define to responsive */
-.grid{
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-.grid__full-width{
-    width: 100%;
-}
-.grid__row{
-    display: flex;
-    flex-wrap: wrap;
-}
