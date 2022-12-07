@@ -1,4 +1,26 @@
 /* Google Font Import - Poppins */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-text);
+}
+:root {
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+body {
+    min-height: 100vh;
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+}
 ::selection {
     background-color: var(--primary-color);
     color: #fff;

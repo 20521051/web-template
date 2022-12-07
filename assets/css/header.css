@@ -1,9 +1,9 @@
 .bg {
-    background-color: aquamarine;
+    background-color: var(--while-color);
 }
 
 .navbar_bg {
-    background-color: aqua;
+    background-color: var(--while-color);
 }
 
 .login_button {
