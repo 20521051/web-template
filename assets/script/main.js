@@ -25,7 +25,7 @@ modeSwitch.addEventListener("click" , () =>{
         
     }
 });
-/* slide show */
+/* slideshow */
 var slideIndex = 1;
  showSlides(slideIndex);
 function plusSlides(n) {

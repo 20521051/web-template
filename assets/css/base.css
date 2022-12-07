@@ -17,7 +17,6 @@
 
     --font-text:'Inter', sans-serif;
     --font-header:'DancingScript';
-    
 }
 *{
     box-sizing: inherit;
@@ -36,4 +35,3 @@ html{
     -ms-user-select: none!important;
     user-select: none!important;
 }
-/* class define to responsive */
