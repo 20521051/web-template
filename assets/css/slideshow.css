@@ -42,11 +42,14 @@
     color: #f2f2f2;
     font-size: 15px;
     padding: 8px 12px;
-
+}
+nav_link{
     bottom: 8px;
     width: 100%;
     text-align: center;
+
 }
+    
 
 
 .numbertext {

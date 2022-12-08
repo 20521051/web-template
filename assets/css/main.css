@@ -1,19 +1,14 @@
-/* general */
-
-
-.sidebar, .home, .header, .maincontent, .footer{
-    border: 2px solid #333;
-}
 .home{
     display: flex;
     flex-direction: column;
 }
-.header{
-    position: sticky;
-    top: 0;
-}
-.maincontent{
-    background-color: var(--while-color);
-    height: 200%;
+
+ol,ul{
+    padding-left: 0;
 }
 
+ .maincontent{
+     background-color: var(--while-color);
+    width: auto;
+    height: 100vh;
+}

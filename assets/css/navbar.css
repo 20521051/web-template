@@ -1,9 +1,4 @@
 /* Google Font Import - Poppins */
-* {
-    margin: 0;
-    padding: 0;
-    font-family: var(--font-text);
-}
 :root {
     --body-color: #E4E9F7;
     --sidebar-color: #FFF;
@@ -15,6 +10,9 @@
     --tran-03: all 0.3s ease;
     --tran-04: all 0.3s ease;
     --tran-05: all 0.3s ease;
+}
+.sidebar{
+    border-right: 0.2rem solid var(--hover-color);
 }
 body {
     min-height: 100vh;
@@ -40,36 +38,36 @@ body.dark {
     top: 0;
     left: 0;
     height: 100%;
-    width: 250px;
-    padding: 10px 14px;
+    width: 25rem;
+    padding: 1rem 1.4rem;
     background: var(--sidebar-color);
     transition: var(--tran-05);
     z-index: 100;
 }
 
 .sidebar.close {
-    width: 88px;
+    width: 8.8rem;
 }
 .sidebar li {
-    height: 50px;
+    height: 5rem;
     list-style: none;
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 .sidebar header .image,
 .sidebar .icon {
-    min-width: 60px;
-    border-radius: 6px;
+    min-width: 6rem;
+    border-radius: 0.6rem;
 }
 .sidebar .icon {
-    min-width: 60px;
-    border-radius: 6px;
+    min-width: 6rem;
+    border-radius: 0.6rem;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 2rem;
 }
 .sidebar .text,
 .sidebar .icon {
@@ -77,7 +75,7 @@ body.dark {
     transition: var(--tran-03);
 }
 .sidebar .text {
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 500;
     white-space: nowrap;
     opacity: 1;
@@ -97,13 +95,13 @@ body.dark {
     flex-direction: column;
 }
 header .image-text .name {
-    margin-top: 2px;
-    font-size: 18px;
+    margin-top: 0.2rem;
+    font-size: 1.8rem;
     font-weight: 600;
 }
 header .image-text .profession {
-    font-size: 16px;
-    margin-top: -2px;
+    font-size: 1.6rem;
+    margin-top: -0.2rem;
     display: block;
 }
 .sidebar header .image {
@@ -112,23 +110,23 @@ header .image-text .profession {
     justify-content: center;
 }
 .sidebar header .image img {
-    width: 40px;
-    border-radius: 6px;
+    width: 4rem;
+    border-radius: 0.6rem;
 }
 .sidebar header .toggle {
     position: absolute;
     top: 50%;
-    right: -25px;
+    right: -2.5rem;
     transform: translateY(-50%) rotate(180deg);
-    height: 25px;
-    width: 25px;
+    height: 2.5rem;
+    width: 2.5rem;
     background-color: var(--primary-color);
     color: var(--sidebar-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 22px;
+    font-size: 2.2rem;
     cursor: pointer;
     transition: var(--tran-05);
 }
@@ -139,10 +137,10 @@ body.dark .sidebar header .toggle {
     transform: translateY(-50%) rotate(0deg);
 }
 .sidebar .menu {
-    margin-top: 40px;
+    margin-top: 4rem;
 }
 .sidebar li.search-box {
-    border-radius: 6px;
+    border-radius: 0.6rem;
     background-color: var(--primary-color-light);
     cursor: pointer;
     transition: var(--tran-05);
@@ -154,8 +152,8 @@ body.dark .sidebar header .toggle {
     border: none;
     background-color: var(--primary-color-light);
     color: var(--text-color);
-    border-radius: 6px;
-    font-size: 17px;
+    border-radius: 0.6rem;
+    font-size: 1.7rem;
     font-weight: 500;
     transition: var(--tran-05);
 }
@@ -183,7 +181,7 @@ body.dark .sidebar li a:hover .text {
     color: var(--text-color);
 }
 .sidebar .menu-bar {
-    height: calc(100% - 55px);
+    height: calc(100% - 5.5rem);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -199,8 +197,8 @@ body.dark .sidebar li a:hover .text {
     transition: var(--tran-05);
 }
 .menu-bar .mode .sun-moon {
-    height: 50px;
-    width: 60px;
+    height: 5rem;
+    width: 6rem;
 }
 .mode .sun-moon i {
     position: absolute;
@@ -218,7 +216,7 @@ body.dark .mode .sun-moon i.moon {
     position: absolute;
     right: 0;
     height: 100%;
-    min-width: 60px;
+    min-width: 6rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -227,8 +225,8 @@ body.dark .mode .sun-moon i.moon {
 }
 .toggle-switch .switch {
     position: relative;
-    height: 22px;
-    width: 40px;
+    height: 2.2rem;
+    width: 4rem;
     border-radius: 25px;
     background-color: var(--toggle-color);
     transition: var(--tran-05);
@@ -236,8 +234,8 @@ body.dark .mode .sun-moon i.moon {
 .switch::before {
     content: '';
     position: absolute;
-    height: 15px;
-    width: 15px;
+    height: 1.5rem;
+    width: 1.5rem;
     border-radius: 50%;
     top: 50%;
     left: 5px;
@@ -246,28 +244,28 @@ body.dark .mode .sun-moon i.moon {
     transition: var(--tran-04);
 }
 body.dark .switch::before {
-    left: 20px;
+    left: 2rem;
 }
 .home {
     position: absolute;
     top: 0;
     top: 0;
-    left: 250px;
+    left: 25rem;
     height: 100vh;
     width: calc(100% - 250px);
     background-color: var(--body-color);
     transition: var(--tran-05);
 }
 .home .text {
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 500;
     color: var(--text-color);
-    padding: 12px 60px;
+    padding: 1,2rem 6rem;
 }
 .sidebar.close~.home {
-    left: 78px;
+    left: 7.8rem;
     height: 100vh;
-    width: calc(100% - 78px);
+    width: calc(100% - 7.8rem);
 }
 body.dark .home .text {
     color: var(--text-color);

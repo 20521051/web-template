@@ -1,5 +1,6 @@
 .bg {
     background-color: var(--while-color);
+    border-bottom: 2px solid var(--hover-color);
 }
 
 .navbar_bg {
@@ -31,4 +32,8 @@
 
 .icon {
     padding-top: 0.4vh;
+}
+.header{
+    position: sticky;
+    top: 0;
 }
