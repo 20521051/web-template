@@ -26,7 +26,7 @@
 <body>
     <div id="main">
         <nav class="sidebar close">
-            <header>
+            <header class="sidebar_header">
                 <div class="image-text">
                     <span class="image">
                         <img src="/assets/img/FWT-mini.png" alt="logo">
@@ -115,38 +115,151 @@
 
         <section class="home">
             <header class="header">
-                <nav class="navbar navbar-expand-sm navbar-dark bg">
-                    <div class="container-fluid navbar_bg">
-                      
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#mynavbar">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="mynavbar">
-                            <form class="d-flex ">
-                                <div class="icon">
-                                    <img src="/assets/img/search-logo.png" alt="search-icon">
-                                </div>
-                                <div class="div_vw">
-                                    <input class="form-control me-2 search_vw" type="text"
-                                        placeholder="Tìm kiếm tên, dạng, thể loại... của template">
-                                </div>
-                                <button class="btn btn-primary login_button" type="button">Login</button>
-                            </form>
+                <div class="container_h">
+                    <div class="search_bar">
+                        <div class="search_icon">
+                            <img src="/assets/img/search-logo.png" alt="search-icon">
                         </div>
+                        <input type="text" class="search_input" spellcheck="false"
+                            placeholder="Tìm kiếm tên, dạng, thể loại... của template">
                     </div>
-                </nav>
-
+                    <div class="login_button">
+                        <a href="#" class="">
+                            Login
+                        </a>
+                    </div>
+                </div>
             </header>
             <div class="maincontent">
                 <div class="slideshow">
                     
                 </div>
                 <div class="free">
-
+                    <header class="free_header">
+                        <h3>Free</h3>
+                    </header>
+                    <div class="grid_free">
+                        <div class="product product_00">
+                            <div class="product_img">
+                                <img src="/assets/img/FWT.png" alt="" class="image">
+                            </div>
+                            <header class="product_header">
+                                <h4>Product 1</h4>
+                            </header>
+                            <p class="product_content">Content of product</p>
+                        </div>
+                        <div class="product product_01">
+                            <div class="product_img">
+                                <img src="/assets/img/FWT.png" alt="" class="image">
+                            </div>
+                            <header class="product_header">
+                                <h4>Product 2</h4>
+                            </header>
+                            <p class="product_content">Content of product</p>
+                        </div>
+                        <div class="product product_01">
+                            <div class="product_img">
+                                <img src="/assets/img/FWT.png" alt="" class="image">
+                            </div>
+                            <header class="product_header">
+                                <h4>Product 3</h4>
+                            </header>
+                            <p class="product_content">Content of product</p>
+                        </div>
+                        <div class="product product_10">
+                            <div class="product_img">
+                                <img src="/assets/img/FWT.png" alt="" class="image">
+                            </div>
+                            <header class="product_header">
+                                <h4>Product 4</h4>
+                            </header>
+                            <p class="product_content">Content of product</p>
+                        </div>
+                        <div class="product product_11">
+                            <div class="product_img">
+                                <img src="/assets/img/FWT.png" alt="" class="image">
+                            </div>
+                            <header class="product_header">
+                                <h4>Product 5</h4>
+                            </header>
+                            <p class="product_content">Content of product</p>
+                        </div>
+                        <div class="product product_12">
+                            <div class="product_img">
+                                <img src="/assets/img/FWT.png" alt="" class="image">
+                            </div>
+                            <header class="product_header">
+                                <h4>Product 6</h4>
+                            </header>
+                            <p class="product_content">Content of product</p>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="paid">
+                <!-- <div class="paid">
 
+                </div> -->
+                <div class="free free111">
+                    <header class="free_header">
+                        <h3>Free</h3>
+                    </header>
+                    <div class="grid_free">
+                        <div class="product product_00">
+                            <div class="product_img">
+                                <img src="/assets/img/FWT.png" alt="" class="image">
+                            </div>
+                            <header class="product_header">
+                                <h4>Product 1</h4>
+                            </header>
+                            <p class="product_content">Content of product</p>
+                        </div>
+                        <div class="product product_01">
+                            <div class="product_img">
+                                <img src="/assets/img/FWT.png" alt="" class="image">
+                            </div>
+                            <header class="product_header">
+                                <h4>Product 2</h4>
+                            </header>
+                            <p class="product_content">Content of product</p>
+                        </div>
+                        <div class="product product_01">
+                            <div class="product_img">
+                                <img src="/assets/img/FWT.png" alt="" class="image">
+                            </div>
+                            <header class="product_header">
+                                <h4>Product 3</h4>
+                            </header>
+                            <p class="product_content">Content of product</p>
+                        </div>
+                        <div class="product product_10">
+                            <div class="product_img">
+                                <img src="/assets/img/FWT.png" alt="" class="image">
+                            </div>
+                            <header class="product_header">
+                                <h4>Product 4</h4>
+                            </header>
+                            <p class="product_content">Content of product</p>
+                        </div>
+                        <div class="product product_11">
+                            <div class="product_img">
+                                <img src="/assets/img/FWT.png" alt="" class="image">
+                            </div>
+                            <header class="product_header">
+                                <h4>Product 5</h4>
+                            </header>
+                            <p class="product_content">Content of product</p>
+                        </div>
+                        <div class="product product_12">
+                            <div class="product_img">
+                                <img src="/assets/img/FWT.png" alt="" class="image">
+                            </div>
+                            <header class="product_header">
+                                <h4>Product 6</h4>
+                            </header>
+                            <p class="product_content">Content of product</p>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
             <footer class="footer">

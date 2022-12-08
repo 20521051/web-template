@@ -31,7 +31,9 @@ body.dark {
     --toggle-color: #fff;
     --text-color: #ccc;
 }
-
+.sidebar_header{
+    border-bottom: 2px solid var(--hover-color);
+}
 /* ===== Sidebar ===== */
 .sidebar {
     position: fixed;

@@ -3,12 +3,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .container {
     max-width: 1170px;
     margin: auto;
@@ -24,9 +18,10 @@ ul {
 }
 
 .footer {
-    background-color: #fff;
-    padding: 70px 0;
-    border-top: 4px solid #e91e63;
+    background-color: var(--while-color);
+    padding: 6rem 0 6rem 3rem;
+    /* border-top: 4px solid #e91e63; */
+    border-top: 4px solid var(--hover-color);
 }
 
 .footer-col {
@@ -38,12 +33,16 @@ ul {
     font-size: 18px;
     color: var(--black-color);
     text-transform: capitalize;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     font-weight: 500;
     position: relative;
+    /* box-sizing: border-box; */
+    border-left: 5px solid #e91e63;
+    padding-left: 10px;
 }
 
-.footer-col h4::before {
+
+/* .footer-col h4::before {
     content: '';
     position: absolute;
     left: 0;
@@ -52,7 +51,7 @@ ul {
     height: 2px;
     box-sizing: border-box;
     width: 50px;
-}
+} */
 
 .footer-col ul li:not(:last-child) {
     margin-bottom: 10px;
@@ -68,6 +67,7 @@ ul {
     transition: all 0.3s ease;
 }
 
+
 .footer-col ul li a:hover {
     color: var(--hover-color);
     padding-left: 8px;
@@ -75,14 +75,15 @@ ul {
 
 .footer-col .social-links a {
     display: inline-block;
+    border: 1px solid var(--text-color);
     height: 40px;
     width: 40px;
-    background-color: rgba(255, 255, 255, 0.2);
     margin: 0 10px 10px 0;
     text-align: center;
     line-height: 47px;
     border-radius: 50%;
     color: var(--text-color);
+    background-color: var(--while-color);
     transition: all 0.5s ease;
 }
 
@@ -91,16 +92,43 @@ ul {
     background-color: var(--black-color);
 }
 
+/* dark theme */
+body.dark .footer {
+}
+body.dark .footer-col .social-links a:hover {
+ 
+}
+body.dark .footer-col .social-links a {
+
+}
+body.dark .footer-col ul li a:hover {
+
+}
+body.dark .footer-col ul li a {
+
+}
+body.dark .footer-col h4 {
+
+}
+
 /*responsive*/
-@media(max-width: 767px) {
+@media  only screen and (max-width:768px) {
+    /* tablet */
     .footer-col {
         width: 50%;
         margin-bottom: 30px;
     }
+    .footer {
+        padding: 60px 0 60px 30px;
+    }
 }
 
-@media(max-width: 574px) {
+@media  only screen and (max-width:600px) {
+    /* phone */
     .footer-col {
         width: 100%;
+    }
+    .footer {
+        padding: 60px 0 60px 45px;
     }
 }
