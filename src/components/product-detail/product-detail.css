@@ -1,0 +1,34 @@
+.maincontent{
+    /* height: 90%; */
+}
+.footer{
+    position: absolute;
+    width: 100%;
+    bottom: -30rem;
+}
+.t_maincontent{
+    position: absolute;
+    left: 5rem;
+    width: 100%;
+}
+.t_content{
+    padding-top: 2rem;
+    text-align: center;
+    float: left;
+    width: 25%;
+}
+.t_frame{
+    float: left;
+    border: 2px solid black;
+}
+.frame{
+    width: 90rem;
+    height: 50rem;
+}
+
+@media  only screen and (max-width:768px) {
+    /* tablet */
+}
+@media  only screen and (max-width:600px) {
+    /* phone */
+}

@@ -49,3 +49,9 @@ function showSlides(n) {
    slides[slideIndex-1].style.display = "block";
    dots[slideIndex-1].className += " active";
  }
+ /* free */
+ var viewProduct = getElementsByClassName("free_product_button");
+ viewProduct.onclick=function(){
+    window.location ="/src/components/product-detail/product-detail.html";
+    alert("hahah");
+ }
