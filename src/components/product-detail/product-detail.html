@@ -5,109 +5,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FWT | Product </title>
+    <title>FWT | Pro Web template</title>
 
 
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/base.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/free.css">
     <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/slideshow.css">
+    <link rel="stylesheet" href="/assets/css/paid.css">
     <link rel="stylesheet" href="/assets/css/navbar.css">
-    <link rel="stylesheet" href="product-detail.css">
+    
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/src/components/product-detail/product-detail.css">
 </head>
 
 <body>
     <div id="main">
-        <nav class="sidebar close">
-            <header class="sidebar_header">
-                <div class="image-text">
-                    <span class="image">
-                        <img src="/assets/img/FWT-mini.png" alt="logo">
-                    </span>
-
-                    <div class="text logo-text">
-                        <span class="name">FWT</span>
-                        <span class="profession">Pro Web Template</span>
-                    </div>
-                </div>
-
-                <i class='bx bx-chevron-right toggle'></i>
-            </header>
-
-            <div class="menu-bar">
-                <div class="menu">
-
-                    <!-- <li class="search-box">
-                        <i class='bx bx-search icon'></i>
-                        <input type="text" placeholder="Search...">
-                    </li> -->
-
-                    <ul class="menu-links">
-                        <li class="nav-link">
-                            <a href="#">
-                                <i class='bx bxs-home icon'></i>
-                                <span class="text nav-text">Home</span>
-                            </a>
-                        </li>
-
-                        <li class="nav-link">
-                            <a href="#">
-                                <i class='bx bxs-store icon'></i>
-                                <span class="text nav-text">Shop</span>
-                            </a>
-                        </li>
-
-                        <li class="nav-link">
-                            <a href="#">
-                                <i class='bx bxs-bell icon'></i>
-                                <span class="text nav-text">Notifications</span>
-                            </a>
-                        </li>
-
-                        <li class="nav-link">
-                            <a href="#">
-                                <i class='bx bxs-contact icon'></i>
-                                <span class="text nav-text">Contact</span>
-                            </a>
-                        </li>
-
-                        <li class="nav-link">
-                            <a href="#">
-                                <i class='bx bxs-wallet icon'></i>
-                                <span class="text nav-text">Wallets</span>
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div class="bottom-content">
-                    <li class="">
-                        <a href="#">
-                            <i class='bx bxs-log-out icon'></i>
-                            <span class="text nav-text">Logout</span>
-                        </a>
-                    </li>
-
-                    <li class="mode">
-                        <div class="sun-moon">
-                            <i class='bx bxs-moon icon moon'></i>
-                            <i class='bx bx-sun icon sun'></i>
-                        </div>
-                        <span class="mode-text text">Dark mode</span>
-
-                        <div class="toggle-switch">
-                            <span class="switch"></span>
-                        </div>
-                    </li>
-
-                </div>
+        <nav class="sidebar">
+            <div class="logo-details">
+                <span class="logo">
+                    <img src="/assets/img/FWT-mini.png"></img>
+                    <div class="logo_name">Pro Web Template</div>
+                </span>
+                <i class='bx bx-menu' id="btn"></i>
             </div>
-
+            <ul class="nav-list">
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-home '></i>
+                        
+                        <span class="links_name">Home</span>
+                    </a>
+                    <span class="tooltip">Home</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-store '></i>
+                        <span class="links_name">Shop</span>
+                    </a>
+                    <span class="tooltip">Shop</span>
+                </li>
+        
+        
+                <li>
+                    <a href="#">
+                        <i class='bx bx-cart-alt'></i>
+                        <span class="links_name">Order</span>
+                    </a>
+                    <span class="tooltip">Order</span>
+                </li>
+        
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-credit-card '></i>
+                        <span class="links_name">Credit-Card</span>
+                    </a>
+                    <span class="tooltip">Credit-Card</span>
+                </li>
+        
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-bell'></i>
+                        <span class="links_name">Notification</span>
+                    </a>
+                    <span class="tooltip">Notification</span>
+                </li>
+        
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-help-circle'></i>
+                        <span class="links_name">Help</span>
+                    </a>
+                    <span class="tooltip">Help</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-cog'></i>
+                        <span class="links_name">Setting</span>
+                    </a>
+                    <span class="tooltip">Setting</span>
+                </li>
+                <li class="profile">
+                    <div class="profile-details">
+                        <img src="/assets/img/logo.png" alt="profileImg">
+                        <div class="name_job">
+                            <div class="name">Prem Shahi</div>
+                            <div class="job">Web designer</div>
+                        </div>
+                    </div>
+                    <i class='bx bx-log-out' id="log_out"></i>
+                </li>
+            </ul>
         </nav>
+
         <section class="home">
             <header class="header">
                 <div class="container_h">
@@ -125,29 +118,24 @@
                     </div>
                 </div>
             </header>
-
-
-
-
-
             <div class="maincontent">
                 <div class="t_maincontent">
                     <div class="t_content">
                         <h2>Mô tả</h2>
                         <!-- phần này dùng JS chạy nội dung -->
-                        <p class="t_detail">mô tả ở đây</p>
+                        <p class="t_detail">mô tả ở đây <br> asdasdasd asdasdasfk hfuashioahsuifhasu hfaushuiahsduia shduhasdas dasdasdassd
+                        asdasdasdasdasijda soifjaisjdiajsd iajsdajsidjasijdia sjdijasodjaoijdaioj gouhhsliahsuf hasuskdhaisjdasd
+                    asdahsdu ahsdi asida sidaiojdi ajsdiajsdi ojasdasdasd 
+                asdasdasj dkjasdasdasdasda sdasdijsodoa jsdijasijda ljdilajsdia jsdlijasdasd
+            asdasdjirjegeoij erigjijgjoigj eriogjeio rjgioerj goejrgijerig
+        asdasdasdasd asijdasoifja isjdiajsdiajs dajsidjasijdiasj ijasodjaoijdaiojgo uhhsliah sufhasuskdh aisjdasd
+                        </p>
                     </div>
                     <div class="t_frame">
                         <iframe src="/index.html" frameborder="0" class="frame"></iframe>
                     </div>
                 </div>
             </div>
-
-
-
-
-
-            
             <footer class="footer">
                 <div class="container">
                     <div class="row">
@@ -180,10 +168,14 @@
                         <div class="footer-col">
                             <h4>Follow Us</h4>
                             <div class="social-links">
-                                <a href=""><i class="fa-brands fa-facebook" style="font-size: 2em"></i></a>
-                                <a href=""><i class="fa-brands fa-twitter" style="font-size: 2em"></i></a>
-                                <a href=""><i class="fa-brands fa-instagram" style="font-size: 2em"></i></a>
-                                <a href=""><i class="fa-brands fa-discord" style="font-size: 2em"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=100029557625178"><i
+                                        class="fa-brands fa-facebook" style="font-size: 2em"></i></a>
+                                <a href="https://twitter.com/?lang=vi"><i class="fa-brands fa-twitter"
+                                        style="font-size: 2em"></i></a>
+                                <a href="https://www.instagram.com/imminhtu_/"><i class="fa-brands fa-instagram"
+                                        style="font-size: 2em"></i></a>
+                                <a href="https://discord.com/"><i class="fa-brands fa-discord"
+                                        style="font-size: 2em"></i></a>
                             </div>
                         </div>
                     </div>
