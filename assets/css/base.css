@@ -10,12 +10,15 @@
 }
 :root{
     --hover-color:rgb(219, 216, 216);
-    --text-color: #333;
+    --text-color: #333; /* --light-text-color:#333 */
+
     --while-color: #fff;
     --black-color: #000;
     --star-color: rgba(76, 198, 207, 0.5);
     --end-color: rgba(63, 195, 56, 0.5);
     --footer-color:#e91e63;
+
+    --dark-color:rgb(40, 42, 54);
 
     --font-text:'Inter', sans-serif;
     --font-header:'DancingScript',sans-serif;
