@@ -1,27 +1,28 @@
 /* Google Font Import - Poppins */
-:root {
-    --body-color: #E4E9F7;
-    --sidebar-color: #FFF;
-    --primary-color: #695CFE;
-    --primary-color-light: #F6F5FF;
-    --toggle-color: #DDD;
-
-    --tran-03: all 0.2s ease;
-    --tran-03: all 0.3s ease;
-    --tran-04: all 0.3s ease;
-    --tran-05: all 0.3s ease;
-}
-.sidebar{
-    border-right: 0.2rem solid var(--hover-color);
-}
 body {
     min-height: 100vh;
     background-color: var(--body-color);
     transition: var(--tran-05);
 }
+.sidebar{
+    border-right: 0.2rem solid var(--hover-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 14%;
+    padding: 1rem 1.4rem;
+    background: var(--sidebar-color);
+    transition: var(--tran-05);
+    z-index: 100;
+}
+.sidebar_header{
+    border-bottom: 2px solid var(--hover-color);
+}
+
 ::selection {
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--while-color);
 }
 body.dark {
     --body-color: #18191a;
@@ -31,24 +32,11 @@ body.dark {
     --toggle-color: #fff;
     --text-color: #ccc;
 }
-.sidebar_header{
-    border-bottom: 2px solid var(--hover-color);
-}
 /* ===== Sidebar ===== */
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 25rem;
-    padding: 1rem 1.4rem;
-    background: var(--sidebar-color);
-    transition: var(--tran-05);
-    z-index: 100;
-}
+
 
 .sidebar.close {
-    width: 8.8rem;
+    width: 5%;
 }
 .sidebar li {
     height: 5rem;
@@ -240,7 +228,7 @@ body.dark .mode .sun-moon i.moon {
     width: 1.5rem;
     border-radius: 50%;
     top: 50%;
-    left: 5px;
+    left: 0.5rem;
     transform: translateY(-50%);
     background-color: var(--sidebar-color);
     transition: var(--tran-04);
@@ -254,7 +242,7 @@ body.dark .switch::before {
     top: 0;
     left: 25rem;
     height: 100vh;
-    width: calc(100% - 250px);
+    width: calc(100% - 25rem);
     background-color: var(--body-color);
     transition: var(--tran-05);
 }
@@ -262,7 +250,7 @@ body.dark .switch::before {
     font-size: 3rem;
     font-weight: 500;
     color: var(--text-color);
-    padding: 1,2rem 6rem;
+    padding: 1.2rem 6rem;
 }
 .sidebar.close~.home {
     left: 7.8rem;

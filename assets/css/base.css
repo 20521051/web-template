@@ -15,9 +15,23 @@
     --black-color: #000;
     --star-color: rgba(76, 198, 207, 0.5);
     --end-color: rgba(63, 195, 56, 0.5);
+    --footer-color:#e91e63;
 
     --font-text:'Inter', sans-serif;
-    --font-header:'DancingScript';
+    --font-header:'DancingScript',sans-serif;
+    --font-footer:'Poppins',sans-serif;
+
+    /* navbar */
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
 }
 *{
     box-sizing: inherit;
