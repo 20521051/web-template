@@ -8,6 +8,7 @@
     font-family: 'DancingScript';
     src: url(/assets/fonts/DancingScript.ttf);
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 :root{
     --hover-color:rgb(219, 216, 216);
     --text-color: #333; /* --light-text-color:#333 */
@@ -25,6 +26,7 @@
     --font-text:'Inter', sans-serif;
     --font-header:'DancingScript',sans-serif;
     --font-footer:'Poppins',sans-serif;
+    --font-navbar:"Poppins" , sans-serif;
 
     /* navbar */
     --body-color: #E4E9F7;

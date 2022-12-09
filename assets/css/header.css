@@ -18,7 +18,7 @@
 }
 .container_h{
     border-bottom: 2px solid var(--hover-color);
-    padding: 1.4rem;
+    padding: 1.6rem;
     position: relative;
     display: flex;
     height: 100%;
