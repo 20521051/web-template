@@ -1,4 +1,5 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
+
 @font-face {
     font-family: 'Inter';
     src: url(/assets/fonts/Inter.ttf);
@@ -9,19 +10,42 @@
 }
 :root{
     --hover-color:rgb(219, 216, 216);
-    --text-color: #333;
+    --text-color: #333; /* --light-text-color:#333 */
+
     --while-color: #fff;
     --black-color: #000;
-    --star-color: rgba(76, 198, 207, 0.5);
+    --start-color: rgba(76, 198, 207, 0.5);
     --end-color: rgba(63, 195, 56, 0.5);
-    
+    --footer-color:#e91e63;
+
+    --dark-color:rgb(40, 42, 54);
+
+    --font-text:'Inter', sans-serif;
+    --font-header:'DancingScript',sans-serif;
+    --font-footer:'Poppins',sans-serif;
+
+    /* navbar */
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
 }
 *{
     box-sizing: inherit;
 }
+html,  body{
+    margin: 0;
+    padding: 0;
+}
 html{
     font-size: 62.5%; /* 1rem = 10px  */
-    line-height: 2rem; 
+    line-height: 2rem;
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
     color: var(--text-color);
@@ -32,17 +56,4 @@ html{
     -moz-user-select: none!important;
     -ms-user-select: none!important;
     user-select: none!important;
-}
-/* class define to responsive */
-.grid{
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-.grid__full-width{
-    width: 100%;
-}
-.grid__row{
-    display: flex;
-    flex-wrap: wrap;
 }
