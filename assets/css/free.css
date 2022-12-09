@@ -2,6 +2,7 @@
     --trans-hidden:0.4s linear;
     --button-visibility:hidden;
     --border-radius-image:5rem;
+    --product-image:url(/assets/img/logo.png);
 }
 
 .free{
@@ -21,6 +22,7 @@
 }
 .grid_free{
     flex: 7;
+    border-top: 2px solid var(--hover-color);
     background-color: var(--while-color);
     display: flex;
     justify-content: space-around;
@@ -38,7 +40,7 @@
 .free_product{
     width: 35rem;
     height: 28rem;
-    margin: 1rem 0;
+    margin: 1.8rem 0 1rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,7 +51,11 @@
     width: 100%;
     height: 75%;
     margin-bottom: 5%;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--product-image) no-repeat center; 
+    background-size: contain;
 }
 .free_product_button{
     width: 35%;
@@ -58,26 +64,23 @@
     border-radius: var(--border-radius-image);
     border: 2px solid var(--while-color);
     background-color: var(--blur-color);
-    color: var(--while-color);
     transition: var(--trans-hidden);
     opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
+    text-decoration: none;
+    text-align: center;
 }
-.free_img{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+.free_product_button a{
+    color: var(--while-color);
+    text-decoration: none;
+    text-align: center;
+}
+/* .free_img{
+    width: 90%;
+    height: 75%;
     border-radius: var(--border-radius-image);
     opacity: 1;
-    display: block;
     transition: var(--trans-hidden);
-}
+} */
 .free_product_img:hover .free_img{
     opacity: 0.3;
     

@@ -46,8 +46,3 @@ function showSlides(n) {
    dots[slideIndex-1].className += " active";
  }
  /* free */
- var viewProduct = document.getElementsByClassName("free_product_button");
- viewProduct.onclick=function(){
-    window.location ="/src/components/product-detail/product-detail.html";
-    alert("hahah");
- }
