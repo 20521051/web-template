@@ -6,7 +6,7 @@
 }
 
 .paid{
-    width: 120rem;
+    width: 90%;
     height: auto;
     display: flex;
     flex-direction: column;

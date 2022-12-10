@@ -4,7 +4,7 @@
 .home{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: calc(100vw - 25rem);
     height: 100%;
 }
 
@@ -15,7 +15,7 @@ ol,ul{
  .maincontent{
     background-color: var(--while-color);
     width: auto;
-    height: 300%;
+    height: 700%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -23,7 +23,9 @@ ol,ul{
 }
 @media  only screen and (max-width:768px) {
     /* tablet */
+
 }
 @media  only screen and (max-width:600px) {
     /* phone */
+
 }

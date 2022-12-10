@@ -1,38 +1,43 @@
- .slideshow-container {
-   width: 100%;
-   height: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
+.slideshow{
+    width: 90%;
+    height: 33rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .slideshow-container {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .slide{
+    border: 2px solid var(--hover-color);
+   border-radius: 3rem;
+  width: 98%;
+  height: 100%;
  }
- .mySlides {
-   display: none;
- }
+ .mySlides{
+  background: var(--slide-img) no-repeat center; 
+  background-size: 100% 100%;
+  border-radius: 3rem;
+}
  .prev, .next {
    cursor: pointer;
-   /* width: 5rem;
-   height: 5rem; */
    text-decoration: none;
    color: var(--text-color);
    font-weight: 1300;
    font-size: 2rem;
-   /* border-radius: 50%; */
    transition: 0.6s ease;
    user-select: none;
-   /* background-color: var(--while-color); */
    text-align: center;
-   /* border: 2px solid var(--hover-color); */
   }
   .prev{
-    /* border-right: none;
-    border-top-right-radius: none;
-    border-bottom-right-radius: none; */
     margin-right: 1rem;
   }
   .next {
-    /* border-left: none;
-    border-top-left-radius: none;
-    border-bottom-left-radius: none; */
     margin-left: 1rem;
   }
  .dot {
@@ -54,6 +59,11 @@
    animation-name: fade;
    animation-duration: 1.5s;
  }
+ .mySlides img{
+  width:100%;
+  height: 100%; 
+  border-radius: 3rem;
+}
 @-webkit-keyframes fade {
    from {opacity: .4}
    to {opacity: 1}
@@ -62,17 +72,11 @@
    from {opacity: .4}
    to {opacity: 1}
  }
+ @media  only screen and (max-width:768px) {
+  /* tablet */
 
-.slideshow{
-    border: 2px solid var(--hover-color);
-    width: 120rem;
-    height: 30rem;
-    margin-top: 3rem;
-    display: relative;
-    border-radius: 3rem;
 }
-.mySlides img{
-  width:120rem;
-  height: 30rem; 
-  border-radius: 3rem;
+@media  only screen and (max-width:600px) {
+  /* phone */
+
 }

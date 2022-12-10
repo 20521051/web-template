@@ -6,7 +6,7 @@
 }
 
 .free{
-    width: 120rem;
+    width: 90%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -84,4 +84,18 @@
 
 .free_product_img:hover .free_product_button{
     opacity: 1;
+}
+@media  only screen and (max-width:768px) {
+    /* tablet */
+    .grid_free{
+        border-bottom: 2px solid var(--hover-color);
+        flex-wrap: nowrap;
+        justify-content: left;
+        overflow-x: auto;
+        width: 100%;
+    }
+}
+@media  only screen and (max-width:600px) {
+    /* phone */
+
 }
