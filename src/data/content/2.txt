@@ -1,0 +1,3 @@
+Internet Bussiness
+
+Trang web với thiết kế đơn giản, được dùng cho các website nhằm mục đích truyền tải thông tin về lĩnh vực liên quan. Website đã được thiết kế sẵn khung mẫu để người dùng thêm thông tin, cũng như đặt các banner hình ảnh.
