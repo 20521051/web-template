@@ -15,11 +15,6 @@
   border-right: 2px solid var(--hover-color);
   font-family: var(--font-navbar);
 }
-
-.sidebar.open{
-  width: var(--width);
-
-}
 .sidebar .logo-details img{
   width: 40px;
   border-radius: 6px;
@@ -29,7 +24,10 @@
   align-items: center;
   opacity: 0;
   pointer-events: none;
-
+ 
+}
+.sidebar.open{
+  width: var(--width);
 }
 .sidebar .logo-details{
   height: 6rem;
@@ -63,7 +61,6 @@
 .sidebar.open .logo-details .logo_name{
   opacity: 1;
 }
-
 .sidebar .logo-details #btn{
   position: absolute;
   top: 50%;
@@ -75,11 +72,11 @@
   text-align: center;
   cursor: pointer;
   transition: all 0.5s ease;
-  
 }
 .sidebar.open .logo-details #btn{
   text-align: right;
   visibility: hidden;
+
 }
 .sidebar i{
   color: var(--black-color);
@@ -162,14 +159,14 @@
   border-radius: 12px;
 }
 .sidebar li.profile{
-  position: fixed;
+  position: absolute;
   height: 60px;
   width: 78px;
   left: 0;
   bottom: -8px;
   padding: 10px 14px;
   background: #1d1b31;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   overflow: hidden;
 }
 .sidebar.open li.profile{
@@ -216,7 +213,27 @@
   width: 50px;
   background: none;
 }
-
+.home{
+  position: relative;
+  background: #E4E9F7;
+  min-height: 100vh;
+  top: 0;
+  left: 78px;
+  width: calc(100% - 78px);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+.sidebar.open ~ .home{
+  left: 250px;
+  width: calc(100% - 250px);
+}
+.home .text{
+  display: inline-block;
+  color: #11101d;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 18px
+}
 @media (max-width: 420px) {
   .sidebar li .tooltip{
     display: none;
@@ -241,6 +258,7 @@
     text-align: right;
     visibility: visible;
   }
+  
 }
 @media  only screen and (max-width:600px) {
   /* phone */

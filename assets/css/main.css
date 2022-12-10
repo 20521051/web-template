@@ -21,21 +21,6 @@ ol,ul{
     justify-content: space-around;
     align-items: center;
 }
-
-
-.paid{
-    border: 2px solid #333;
-    width: 75vw;
-    height: 30vh;
-    background-color: var(--end-color);
-    /* có cách khác nên chỉnh sau */
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-
-}
-.free111{
-    margin-bottom: 5rem;
-}
 @media  only screen and (max-width:768px) {
     /* tablet */
 }

@@ -51,13 +51,7 @@ function setIndex(n) {
   
   function loadSlide(){
   slideIndex = setIndex(slideIndex++);
-  let x ="slide_";
-  let y="dot_";
-  resetSlide();
-  x+=slideIndex;
-  y+=slideIndex;
-  document.getElementsByClassName(x).style="display: block;"
-  document.getElementsByClassName(x).className+=" active"
+  showSlides(slideIndex);
 }
 
 setInterval(loadSlide(),3000);

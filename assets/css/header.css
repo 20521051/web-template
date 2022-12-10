@@ -10,7 +10,6 @@
     background-color: rgba(76, 198, 207, 0.5);
     color: var(--black);
 }
-
 .header{
     height: 20%;
     position: sticky;
@@ -30,7 +29,7 @@
     display: flex;
     flex: auto;
 }
-.search_icon {
+.search_icon{
     position: absolute;
     left: 29.5%;
 }
@@ -41,4 +40,41 @@
     border-radius: 2.5rem;
     width:  42rem;
     padding: 0.3% 0 0.3% 5%;
+}
+
+@media  only screen and (max-width:768px) {
+    /* tablet */
+    .search_input{
+        /* margin-left: 5%; */
+        padding: 0.5rem;
+        padding-left: 4rem;
+        
+    }
+    .search_icon{
+        position: absolute;
+        left: 9%;
+    }
+}
+
+@media  only screen and (max-width:600px) {
+    /* phone */
+    .search_bar{
+        width: 100%;
+    }
+    .header{
+        width: auto;
+    }
+    .login_button{
+        position: absolute;
+        right: 1rem;
+        bottom: 1.5rem;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .search_input{
+        visibility: hidden;
+    }
+    .search_icon{
+        position: relative;
+    }
 }
