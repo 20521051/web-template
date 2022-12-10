@@ -72,3 +72,23 @@ html{
 .login_button:hover{
   background-color: var(--hover-color);
 }
+@media  only screen and (max-width:768px) {
+  /* tablet */
+  .login_container{
+    border: 2px solid var(--hover-color);
+    background-color: var(--while-color);
+    width: 55rem;
+    height: 75rem;
+    border-radius: 30px;
+  }
+}
+@media  only screen and (max-width:600px) {
+  /* phone */
+  .login_container{
+    border: 2px solid var(--hover-color);
+    background-color: var(--while-color);
+    width: 35rem;
+    height: 60rem;
+    border-radius: 15px;
+  }
+}
