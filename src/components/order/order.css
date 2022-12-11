@@ -1,0 +1,29 @@
+.order{
+    width: 80%;
+}
+.order_header h1{
+    text-align: center;
+    font-size: 3rem;
+}
+.order_header{
+    font-size: 1.7rem;
+}
+.order-item_header h3{
+    font-size: 2.5rem;
+}
+.order_content{
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+}
+.order-item_content{
+    margin-bottom: 2rem;
+}
+@media only screen and (max-width:768px) {
+    /* tablet */
+
+  }
+
+  @media only screen and (max-width:600px) {
+    /* phone */
+
+  }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FWT | Pro Web template</title>
+    <title>PWT | Order</title>
 
 
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
@@ -13,14 +13,12 @@
 
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/base.css">
-
     <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="stylesheet" href="/assets/css/free.css">
     <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css/slideshow.css">
-    <link rel="stylesheet" href="/assets/css/paid.css">
+
     <link rel="stylesheet" href="/assets/css/navbar.css">
 
+    <link rel="stylesheet" href="/src/components/order/order.css">
 </head>
 
 <body>
@@ -34,16 +32,14 @@
                 <i class='bx bx-menu' id="btn"></i>
             </div>
             <ul class="nav-list">
-                <div class="h_h">
-                    <li>
-                        <a href="/index.html" class="nav-home">
-                            <i class='bx bxs-home '></i>
-    
-                            <span class="links_name">Home</span>
-                        </a>
-                        <span class="tooltip">Home</span>
-                    </li>
-                </div>
+                <li>
+                    <a href="/index.html" class="nav-home">
+                        <i class='bx bxs-home '></i>
+
+                        <span class="links_name">Home</span>
+                    </a>
+                    <span class="tooltip">Home</span>
+                </li>
                 <li>
                     <a href="/src/components/product/product.html">
                         <i class='bx bxs-store '></i>
@@ -51,16 +47,15 @@
                     </a>
                     <span class="tooltip">Shop</span>
                 </li>
-
-
-                <li>
-                    <a href="/src/components/order/order.html">
-                        <i class='bx bx-cart-alt'></i>
-                        <span class="links_name">Order</span>
-                    </a>
-                    <span class="tooltip">Order</span>
-                </li>
-
+                <div class="h_h">
+                    <li>
+                        <a href="/src/components/order/order.html">
+                            <i class='bx bx-cart-alt'></i>
+                            <span class="links_name">Order</span>
+                        </a>
+                        <span class="tooltip">Order</span>
+                    </li>
+                </div>
                 <!-- <li>
                     <a href="#">
                         <i class='bx bxs-bell'></i>
@@ -76,7 +71,7 @@
                     </a>
                     <span class="tooltip">Help</span>
                 </li>
-                
+
                 <li class="profile">
                     <div class="profile-details">
                         <img src="/assets/img/logo.png" alt="profileImg">
@@ -99,8 +94,7 @@
                                 <img src="/assets/img/search-logo.png" alt="search-icon">
                             </div>
                             <input type="search" class="search_input" spellcheck="false"
-                                placeholder="Tìm kiếm tên, dạng, thể loại... của template"
-                                onsearch="searchFunction()">
+                                placeholder="Tìm kiếm tên, dạng, thể loại... của template" onsearch="searchFunction()">
                         </div>
                         <div>
                             <a href="/src/components/login/login.html" class="login_button">
@@ -109,218 +103,65 @@
                         </div>
                     </div>
                 </div>
-                
+
             </header>
             <div class="maincontent">
-                <div class="slideshow">
-                    <div class="slideshow-container">
-                        <div class="prev" onclick="currentSlide('prev')">❮</div>
-                        <div class="slide">
-                            <div class="mySlides">
-                                <img class="slide_1"
-                                src="/src/data/img/slide3.png">
-                            </div>
-                            <div class="mySlides">
-                                <img class="slide_2"
-                                src="/src/data/img/slide6.png">
-                            </div>
-                            <div class="mySlides">
-                                <img class="slide_3"
-                                src="/src/data/img/slide12.png">
+                <div class="order">
+                    <header class="order_header">
+                        <h1>Thiết kế theo yêu cầu</h1>
+                        <span>Thiết kế website theo yêu cầu là một trong những giải pháp thiết kế website hỗ trợ kinh doanh trực tuyến được nhiều doanh nghiệp lựa chọn nhất hiện nay. và Pro Web TemPlate  đem đễn cho khách hàng không chỉ 1 website đơn thuần mà là  sở hữu một website THỰC SỰ tối ưu về TRẢI NGHIỆM người dùng ( UX, UI), và về SEO, về tốc độ . Có như vậy mới TIẾT KIỆM được về lâu dài. Cùng với các gói thiết kế website theo mẫu, thiết kế web theo yêu cầu tại Pro Web Template triển khai trên tất cả các lĩnh vực thuộc các ngành nghề như kinh doanh điện thoại, báo, bất động sản, đồng hồ...với giao diện đẹp, trải nghiệm người dùng cao. Luôn cập nhật các công nghệ mới nhất từ google, tính năng ưu biệt, chuẩn SEO mới của một website chuyên nghiệp theo đúng những gì mà đơn vị kinh doanh mong muốn. Đến với thiết kế Pro WebTemPlate khách hàng làm lại web nhưng vẫn bảo toàn được SEO, top.. Pro WebTemPlate luôn có đội nghiên cứu và phát triển công nghệ mới: Nâng cao chât lượng và Song hành cùng sự phát triển của khách hàng. </span>
+                    </header>
+                    <div class="order_content">
+                        <div class="order-item1">
+                            <header class="order-item_header">
+                                <h3>1. Những lý do nên thiết kế website theo yêu cầu</h3>
+                            </header>
+                            <div class="order-item_content">
+                                <span>Vì sao gói thiết kế website theo yêu cầu ngày càng phổ biến và được nhiều doanh nghiệp ưa chuộng nhất hiện nay? Những lý do dưới đây sẽ giúp bạn lý giải điều đó.
+                                    <ul>
+                                        <li>
+                                            <span>+ Với mỗi thiết kế website theo yêu cầu doanh nghiệp sẽ được lựa chọn giao diện web theo ý mình mong muốn cũng như những tính năng theo yêu cầu cần thiết cho website doanh nghiệp thuộc ngành nghề, lĩnh vực nhất định. Mỗi khách hàng có thể tiếp cận website doanh nghiệp khác cùng lĩnh vực để tham khảo hoặc nhờ đến sự tư vấn của các chuyên gia thiết kế website để tạo nên một trang web độc đáo, ấn tượng với đầy đủ các tính năng thu hút người dùng.</span>
+                                            <br> <span>+  Khi thiết kế theo yêu cầu, trang web doanh nghiệp sẽ đảm bảo được tốc độ truy cập nhanh, phù hợp với mọi thiết bị di động bằng công nghệ thiết kế website Responsive và trình duyệt mang đến cho người dùng, khách hàng những trải nghiệm tuyệt vời nhất.</span>
+                                            <br> <span>+ Đặc biệt khi sở hữu một trang web theo yêu cầu với giao diện cùng các tính năng riêng biệt một cách khoa học, hợp lý, độc đáo và ấn tượng sẽ tạo lợi thế cho doanh nghiệp nâng cao thứ hạng website trên công cụ tìm kiếm, mang đến cơ hội tiếp cận khách hàng nhiều và nhanh hơn.</span>
+                                        </li>
+                                    </ul>                                   
                             </div>
                         </div>
-                        <div class="next" onclick="currentSlide('next')">❯</div>
-                    </div>
-                    <div style="text-align:start; margin: 1rem 0 0  3rem;">
-                        <span class="dot dot_1" onclick="currentSlide(1)"></span>
-                        <span class="dot dot_2" onclick="currentSlide(2)"></span>
-                        <span class="dot dot_3" onclick="currentSlide(3)"></span>
-                    </div>
-                </div>
-                <div class="free">
-
-                    <header class="free_header">
-                        Free Website Template
-                    </header>
-                    <div class="scroll_free">
-
-
-                        <div class="grid_free">
-                            <div class="free_product free01">
-                                <div class="free_product_img free_img01">
-                                    <button class="free_product_button free_product_button01">
-                                        <a href="/src/components/product-detail/product-detail.html">
-                                            View product
-                                        </a>
-                                    </button>
-                                </div>
-                                <header class="free_product_header free_product_header01">
-                                    <h4 class="free_h4 free_h4_01">Product 1</h4>
-                                </header>
-                                <p class="free_product_content free_product_content01">Content of product 1</p>
-                            </div>
-
-                            <div class="free_product free02">
-                                <div class="free_product_img free_img02">
-                                    <button class="free_product_button free_product_button02">
-                                        <a href="/src/components/product-detail/product-detail.html">
-                                            View product
-                                        </a>
-                                    </button>
-                                </div>
-                                <header class="free_product_header free_product_header02">
-                                    <h4 class="free_h4 free_h4_02">Product 2</h4>
-                                </header>
-                                <p class="free_product_content free_product_content02">Content of product 2</p>
-                            </div>
-
-                            <div class="free_product free03">
-                                <div class="free_product_img free_img03">
-                                    <button class="free_product_button free_product_button03">
-                                        <a href="/src/components/product-detail/product-detail.html">
-                                            View product
-                                        </a>
-                                    </button>
-                                </div>
-                                <header class="free_product_header free_product_header03">
-                                    <h4 class="free_h4 free_h4_03">Product 3</h4>
-                                </header>
-                                <p class="free_product_content free_product_content03">Content of product 3</p>
-                            </div>
-
-                            <div class="free_product free04">
-                                <div class="free_product_img free_img04">
-                                    <button class="free_product_button free_product_button04">
-                                        <a href="/src/components/product-detail/product-detail.html">
-                                            View product
-                                        </a>
-                                    </button>
-                                </div>
-                                <header class="free_product_header free_product_header04">
-                                    <h4 class="free_h4 free_h4_04">Product 4</h4>
-                                </header>
-                                <p class="free_product_content free_product_content04">Content of product 4</p>
-                            </div>
-
-                            <div class="free_product free05">
-                                <div class="free_product_img free_img05">
-                                    <button class="free_product_button free_product_button05">
-                                        <a href="/src/components/product-detail/product-detail.html">
-                                            View product
-                                        </a>
-                                    </button>
-                                </div>
-                                <header class="free_product_header free_product_header05">
-                                    <h4 class="free_h4 free_h4_05">Product 5</h4>
-                                </header>
-                                <p class="free_product_content free_product_content05">Content of product 5</p>
-                            </div>
-
-                            <div class="free_product free06">
-                                <div class="free_product_img free_img06">
-                                    <button class="free_product_button free_product_button06">
-                                        <a href="/src/components/product-detail/product-detail.html">
-                                            View product
-                                        </a>
-                                    </button>
-                                </div>
-                                <header class="free_product_header free_product_header06">
-                                    <h4 class="free_h4 free_h4_06">Product 6</h4>
-                                </header>
-                                <p class="free_product_content free_product_content06">Content of product 6</p>
+                        <div class="order-item2">
+                            <header class="order-item_header">
+                                <h3>2. Ưu điểm của gói thiết kế website theo yêu cầu tại Pro Web Template </h3>
+                            </header>
+                            <div class="order-item_content">
+                               <span>Bất cứ doanh nghiệp nào khi tiến hành thiết kế website theo yêu cầu, Pro WebTemPlate cũng luôn đảm bảo và cam kết tới quý khách hàng một trang web với giao diện đẹp cùng các tính năng đầy đủ như trên. Bên cạnh đó những lợi thế dưới đây là điều bạn không thể bỏ qua khi sử dụng và trải nghiệm dịch vụ khách hàng của Pro WebTemPlate:</span>
+                               <ul>
+                                <li>
+                                    <span>-  Đội ngũ thiết kế website dày dặn kinh nghiệm trong thiết kế hàng ngàn website doanh nghiệp thuộc nhiều lĩnh vực, ngành nghề khác nhau sẽ nắm bắt được website của bạn nên và cần có những gì? Đó là nền tảng để chúng tôi tư vấn và hỗ trợ tận tình cho mỗi yêu cầu thiết kế website.</span>
+                                    <br> <span>-  Cam kết thời gian bàn giao thiết kế website theo yêu cầu chuyên nghiệp, chất lượng đúng như những gì đã thỏa thuận và ký kết trên hợp đồng.</span>
+                                    <br> <span>-  Dịch vụ hỗ trợ khách hàng sau thiết kế luôn sẵn sàng, diễn ra 24/7 nhằm giúp website doanh nghiệp vận hành một cách tốt nhất.</span>
+                                </li>
+                               </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="paid">
-                    <header class="paid_header">
-                        Paid Website Template
-                    </header>
-                    <div class="scroll_paid">
-
-                        <div class="grid_paid">
-                            <div class="paid_product paid01">
-                                <div class="paid_product_img paid_img01">
-                                    <button class="paid_product_button paid_product_button01">
-                                        <a href="/src/components/product-detail/product-detail.html">
-                                            View product
-                                        </a>
-                                    </button>
-                                </div>
-                                <header class="paid_product_header paid_product_header01">
-                                    <h4 class="paid_h4 paid_h4_01">Product 1</h4>
-                                </header>
-                                <p class="paid_product_content paid_product_content01">Content of product 1</p>
-                            </div>
-
-                            <div class="paid_product paid02">
-                                <div class="paid_product_img paid_img02">
-                                    <button class="paid_product_button paid_product_button02">
-                                        <a href="/src/components/product-detail/product-detail.html">
-                                            View product
-                                        </a>
-                                    </button>
-                                </div>
-                                <header class="paid_product_header paid_product_header02">
-                                    <h4 class="paid_h4 paid_h4_02">Product 2</h4>
-                                </header>
-                                <p class="paid_product_content paid_product_content02">Content of product 2</p>
-                            </div>
-
-                            <div class="paid_product paid03">
-                                <div class="paid_product_img paid_img03">
-                                    <button class="paid_product_button paid_product_button03">
-                                        <a href="/src/components/product-detail/product-detail.html">
-                                            View product
-                                        </a>
-                                    </button>
-                                </div>
-                                <header class="paid_product_header paid_product_header03">
-                                    <h4 class="paid_h4 paid_h4_03">Product 3</h4>
-                                </header>
-                                <p class="paid_product_content paid_product_content03">Content of product 3</p>
-                            </div>
-
-                            <div class="paid_product paid04">
-                                <div class="paid_product_img paid_img04">
-                                    <button class="paid_product_button paid_product_button04">
-                                        <a href="/src/components/product-detail/product-detail.html">
-                                            View product
-                                        </a>
-                                    </button>
-                                </div>
-                                <header class="paid_product_header paid_product_header04">
-                                    <h4 class="paid_h4 paid_h4_04">Product 4</h4>
-                                </header>
-                                <p class="paid_product_content paid_product_content04">Content of product 4</p>
-                            </div>
-
-                            <div class="paid_product paid05">
-                                <div class="paid_product_img paid_img05">
-                                    <button class="paid_product_button paid_product_button05">
-                                        <a href="/src/components/product-detail/product-detail.html">
-                                            View product
-                                        </a>
-                                    </button>
-                                </div>
-                                <header class="paid_product_header paid_product_header05">
-                                    <h4 class="paid_h4 paid_h4_05">Product 5</h4>
-                                </header>
-                                <p class="paid_product_content paid_product_content05">Content of product 5</p>
-                            </div>
-
-                            <div class="paid_product paid06">
-                                <div class="paid_product_img paid_img06">
-                                    <button class="paid_product_button paid_product_button06">
-                                        <a href="/src/components/product-detail/product-detail.html">
-                                            View product
-                                        </a>
-                                    </button>
-                                </div>
-                                <header class="paid_product_header paid_product_header06">
-                                    <h4 class="paid_h4 paid_h4_06">Product 6</h4>
-                                </header>
-                                <p class="paid_product_content paid_product_content06">Content of product 6</p>
+                        <div class="order-item3">
+                            <header class="order-item_header">
+                                <h3>3. Quy trình thiết kế website theo yêu cầu tại Pro Web Template. </h3>
+                            </header>
+                            <div class="order-item_content">
+                                <span>Để mang đến cho khách hàng, doanh nghiệp những sản phẩm thiết kế website theo yêu cầu chất lượng chuyên nghiệp nhất, Pro WebTemPlate áp dụng một quy trình thiết kế chặt chẽ với 8 bước cơ bản như sau:</span>
+                                <br><span>Bước 1: Tiếp nhận yêu cầu từ khách hàng thông qua hotline 1900 1010 hoặc các tài khoản chúng tôi để phía dưới trang web.
+                                </span>
+                                <br><span>Bước 2: Đánh giá yêu cầu và tư vấn khách hàng cụ thể.
+                                </span>
+                                <br><span>Bước 3: Thiết lập hồ sơ xây dựng trang web.
+                                </span>
+                                <br><span>Bước 5: Thiết kế cơ sở dữ liệu và lập trình tính năng.
+                                </span>
+                                <br><span>Bước 6: Phát hành bản demo và kiểm thử.
+                                </span>
+                                <br><span>Bước 7: Bàn giao và nghiệm thu
+                                </span>
+                                <br><span>Bước 8:  Dịch vụ bảo hành - bảo trì website.
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -330,7 +171,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="footer-col">
-                            <h4>FWT</h4>
+                            <h4>PWT</h4>
                             <ul>
                                 <li><a href="">About us</a></li>
                                 <li><a href="">Our services</a></li>
@@ -374,9 +215,10 @@
         </section>
     </div>
 
-
     <script src="/assets/script/main.js"></script>
     <script src="https://kit.fontawesome.com/682da8c922.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="/src/components/order/order.js"></script>
 </body>
 
 </html>

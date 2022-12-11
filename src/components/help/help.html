@@ -5,23 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FWT | Pro Web template</title>
-
+    <title>PWT | Pro Web template</title>
 
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/base.css">
-
     <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="stylesheet" href="/assets/css/free.css">
     <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css/slideshow.css">
-    <link rel="stylesheet" href="/assets/css/paid.css">
-    <link rel="stylesheet" href="/assets/css/navbar.css">
-    <link rel="stylesheet" href="/assets/css/help.css">
 
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="/src/components/help/help.css">
 
 </head>
 
@@ -36,16 +31,18 @@
                 <i class='bx bx-menu' id="btn"></i>
             </div>
             <ul class="nav-list">
+
                 <li>
-                    <a href="#">
+                    <a href="/index.html" class="nav-home">
                         <i class='bx bxs-home '></i>
 
                         <span class="links_name">Home</span>
                     </a>
                     <span class="tooltip">Home</span>
                 </li>
+
                 <li>
-                    <a href="#">
+                    <a href="/src/components/product/product.html">
                         <i class='bx bxs-store '></i>
                         <span class="links_name">Shop</span>
                     </a>
@@ -54,16 +51,24 @@
 
 
                 <li>
-                    <a href="#">
+                    <a href="/src/components/order/order.html">
                         <i class='bx bx-cart-alt'></i>
                         <span class="links_name">Order</span>
                     </a>
                     <span class="tooltip">Order</span>
                 </li>
-                
-                <div class = "h_h">
-                    <li>
+
+                <!-- <li>
                         <a href="#">
+                            <i class='bx bxs-bell'></i>
+                            <span class="links_name">Notification</span>
+                        </a>
+                        <span class="tooltip">Notification</span>
+                    </li> -->
+                <div class="h_h">
+
+                    <li>
+                        <a href="/src/components/help/help.html">
                             <i class='bx bxs-help-circle'></i>
                             <span class="links_name">Help</span>
                         </a>
@@ -75,7 +80,7 @@
                     <div class="profile-details">
                         <img src="/assets/img/logo.png" alt="profileImg">
                         <div class="name_job">
-                            <div class="name">Prem Shahi</div>
+                            <div class="name">Group 7</div>
                             <div class="job">Web designer</div>
                         </div>
                     </div>
@@ -92,8 +97,8 @@
                             <div class="search_icon">
                                 <img src="/assets/img/search-logo.png" alt="search-icon">
                             </div>
-                            <input type="text" class="search_input" spellcheck="false"
-                                placeholder="Tìm kiếm tên, dạng, thể loại... của template">
+                            <input type="search" class="search_input" spellcheck="false"
+                                placeholder="Tìm kiếm tên, dạng, thể loại... của template" onsearch="searchFunction()">
                         </div>
                         <div>
                             <a href="/src/components/login/login.html" class="login_button">
@@ -102,7 +107,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </header>
             <div class="maincontent">
                 <div class="help">
@@ -139,7 +144,7 @@
                                         <br><span>Sử dụng mật khẩu trên nhiều thiết bị</span>
                                     </li>
                                 </ul>
-                               
+
                             </div>
                         </div>
                         <div class="help-item3">
@@ -149,13 +154,13 @@
                             <div class="help-item_content">
                                 <ul>
                                     <li>
-                                <span>Xóa lịch sử tìm kiếm</span>
-                                <br><span>Xóa sản phẩm đã đặt hàng </span>
-                                <br><span>Xem nhật ký hoạt động mua hàng của bạn</span>
-                                <br><span>Quản lý mật khẩu</span>
-                                <br><span>Khóa hoặc xóa tài khoản trên điện thoại hoặc máy tính bị mất</span>
+                                        <span>Xóa lịch sử tìm kiếm</span>
+                                        <br><span>Xóa sản phẩm đã đặt hàng </span>
+                                        <br><span>Xem nhật ký hoạt động mua hàng của bạn</span>
+                                        <br><span>Quản lý mật khẩu</span>
+                                        <br><span>Khóa hoặc xóa tài khoản trên điện thoại hoặc máy tính bị mất</span>
                                     </li>
-                                    
+
                                 </ul>
                             </div>
                         </div>
@@ -164,15 +169,15 @@
                                 <h3>Khắc phục sự cố </h3>
                             </header>
                             <div class="help-item_content">
-                               <ul>
-                                <li>
-                                    <span>Giúp website chạy tốt hơn</span>
-                                    <br><span>Khắc phục lỗi kết nối </span>
-                                    <br><span>Khắc phục sự cố với nội dung web</span>
-                                    <br><span>Tự động bắt đầu hoặc dừng báo cáo lỗi và sự cố</span>
-                                    <br><span>Báo cáo sự cố hoặc gửi phải hồi về Pro web Template</span>
-                                </li>
-                               </ul>
+                                <ul>
+                                    <li>
+                                        <span>Giúp website chạy tốt hơn</span>
+                                        <br><span>Khắc phục lỗi kết nối </span>
+                                        <br><span>Khắc phục sự cố với nội dung web</span>
+                                        <br><span>Tự động bắt đầu hoặc dừng báo cáo lỗi và sự cố</span>
+                                        <br><span>Báo cáo sự cố hoặc gửi phải hồi về Pro web Template</span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -182,7 +187,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="footer-col">
-                            <h4>FWT</h4>
+                            <h4>PWT</h4>
                             <ul>
                                 <li><a href="">About us</a></li>
                                 <li><a href="">Our services</a></li>
@@ -226,8 +231,6 @@
         </section>
     </div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/script/main.js"></script>
     <script src="https://kit.fontawesome.com/682da8c922.js" crossorigin="anonymous"></script>
 </body>
