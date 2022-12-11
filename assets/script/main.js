@@ -1,23 +1,18 @@
-/* Load  file */
-loadFile();
-function loadFile(){
-  let slide = "slide_";
-  let min = 1;
-  let max = 12;
-  let random = [];
-  random[1]  = Math.floor(Math.random() * (max - min - 1) ) + min + 1;
-  random[0]= getRndInteger(min,random[1]);
-  random[2]= getRndInteger(random[1], max);
-  for(let i =1;i<=3;i++){
-    let _slide = slide + i;
-    let x = "/src/data/img/slide"+ random[i-1]+"png";
-    document.getElementsByClassName(_slide).src=x;
-  }
+document.querySelector(".logo").addEventListener("click",()=>{
+  document.getElementsByClassName("nav-home").click = true;
+  Redirect("/index.html");
+});
 
+function searchFunction(){
+  let search = document.getElementsByClassName("search_input");
+  let text = search.value;
+  
 }
-function getRndInteger(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) ) + min;
+
+function Redirect(link) {
+  window.location=link;
 }
+
 /* navbar */
 let sidebar = document.querySelector(".sidebar");
 let closeBtn = document.querySelector("#btn");

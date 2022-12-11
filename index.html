@@ -35,7 +35,7 @@
             </div>
             <ul class="nav-list">
                 <li>
-                    <a href="#">
+                    <a href="/index.html" class="nav-home">
                         <i class='bx bxs-home '></i>
 
                         <span class="links_name">Home</span>
@@ -43,7 +43,7 @@
                     <span class="tooltip">Home</span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="/src/components/product/product.html">
                         <i class='bx bxs-store '></i>
                         <span class="links_name">Shop</span>
                     </a>
@@ -110,8 +110,9 @@
                             <div class="search_icon">
                                 <img src="/assets/img/search-logo.png" alt="search-icon">
                             </div>
-                            <input type="text" class="search_input" spellcheck="false"
-                                placeholder="Tìm kiếm tên, dạng, thể loại... của template">
+                            <input type="search" class="search_input" spellcheck="false"
+                                placeholder="Tìm kiếm tên, dạng, thể loại... của template"
+                                onsearch="searchFunction()">
                         </div>
                         <div>
                             <a href="/src/components/login/login.html" class="login_button">
@@ -128,13 +129,16 @@
                         <div class="prev" onclick="currentSlide('prev')">❮</div>
                         <div class="slide">
                             <div class="mySlides">
-                                <img class="slide_1">
+                                <img class="slide_1"
+                                src="/src/data/img/slide3.png">
                             </div>
                             <div class="mySlides">
-                                <img class="slide_2">
+                                <img class="slide_2"
+                                src="/src/data/img/slide6.png">
                             </div>
                             <div class="mySlides">
-                                <img class="slide_3">
+                                <img class="slide_3"
+                                src="/src/data/img/slide12.png">
                             </div>
                         </div>
                         <div class="next" onclick="currentSlide('next')">❯</div>

@@ -1,0 +1,38 @@
+#warpper{
+    max-width: 120rem;
+    margin: 0rem auto;
+  }
+  
+  .nav-tabs {
+    display: flex;
+    list-style: none;
+    margin: 0rem;
+    padding: 0rem;
+    border-bottom: 0.3rem solid #ddd;
+    height: auto;
+    width: auto;
+  }
+  
+  .nav-tabs li{
+    margin-right: 1rem;
+  }
+  .nav-tabs li a{
+    display: block;
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .nav-tabs li a::after{
+    content: "";
+    height: 0.3rem;
+    width: 100%;
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem;
+    background: transparent;
+  }
+  
+  .nav-tabs li.active a::after, .nav-tabs li:hover a::after{
+    background:  var(--hover-color);
+  }
