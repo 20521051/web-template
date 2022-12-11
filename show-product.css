@@ -8,19 +8,22 @@
   list-style: none;
   margin: 0rem;
   padding: 0rem;
-  border-bottom: 0.3rem solid #ddd;
+  border-bottom: 5px solid transparent;
   height: auto;
   width: auto;
+  text-align: center;
 }
 
 .nav-tabs li{
   margin-right: 1rem;
+  height: auto;
+  width: 40rem;
 }
+
 .nav-tabs li a{
   display: block;
   padding: 0.6rem 1rem;
   text-decoration: none;
-  position: relative;
 }
 
 .nav-tabs li a::after{
