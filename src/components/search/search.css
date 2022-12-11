@@ -5,7 +5,7 @@
     --product-image:url(/assets/img/logo.png);
 }
 
-.free{
+.search{
     width: 120rem;
     height: auto;
     display: flex;
@@ -14,13 +14,13 @@
     margin: 10rem 0 5rem 0;
  
 }
-.free_header{
+.search_header{
     flex: 2;
     font-size: 2rem;
     margin-bottom: 1.5rem;
     font-weight: 1000;
 }
-.grid_free{
+.grid_search{
     flex: 7;
     border-top: 2px solid var(--hover-color);
     background-color: var(--while-color);
@@ -29,15 +29,15 @@
     align-items: center;
     flex-wrap: wrap;
 }
-.free_product_header{
+.search_product_header{
     display: block;
     width: 100%;
     margin-bottom: 1rem;
 }
-.free_product_content{
+.search_product_content{
     width: 100%;
 }
-.free_product{
+.search_product{
     width: 35rem;
     height: 28rem;
     margin: 1.8rem 0 1rem 0;
@@ -45,7 +45,7 @@
     flex-direction: column;
     align-items: center;
 }
-.free_product_img{
+.search_product_img{
     border: 2px solid var(--hover-color);
     border-radius: var(--border-radius-image);
     width: 100%;
@@ -57,7 +57,7 @@
     background: var(--product-image) no-repeat center; 
     background-size: 100% 100%;
 }
-.free_product_button{
+.search_product_button{
     width: 100%;
     height: 100%;
     font-size: 1.5rem;
@@ -66,7 +66,7 @@
     border: none;
     opacity: 0;
 }
-.free_product_button a{
+.search_product_button a{
     color: var(--text-color);
     text-decoration: none;
     text-align: center;
@@ -80,10 +80,10 @@
     text-decoration: none;
     text-align: center;
 }
-.free_product_img:hover .free_product_button a{
+.search_product_img:hover .search_product_button a{
     opacity: 1;
 }
-.free_product_img:hover .free_product_button{
+.search_product_img:hover .search_product_button{
     opacity: 1;
 }
 /* pagination */
@@ -124,7 +124,7 @@
 /*responsive*/
 @media  only screen and (max-width:1300px) {
     /* tablet */
-    .free {
+    .search {
         width: 80rem;
         margin-bottom: 7rem 0;
     }
@@ -132,7 +132,7 @@
     
 @media  only screen and (max-width:768px) {
     /* tablet */
-    .free {
+    .search {
         width: 60rem;
         margin-bottom: 7rem 0;
     }

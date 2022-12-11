@@ -2,11 +2,11 @@ document.querySelector(".logo").addEventListener("click",()=>{
   document.getElementsByClassName("nav-home").click = true;
   Redirect("/index.html");
 });
-
+var outputSearchText;
 function searchFunction(){
   let search = document.getElementsByClassName("search_input");
-  let text = search.value;
-  
+  outputSearchText = search.value;
+  Redirect("/src/components/search/search.html");
 }
 
 function Redirect(link) {
