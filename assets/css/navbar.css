@@ -5,7 +5,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  height: 100vh;
+  height: 100%;
   width: 7.8rem;
   background: var(--while-color);
   padding: 6px 14px;
