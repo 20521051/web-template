@@ -2,11 +2,14 @@
   width: 90%;
   height: auto;
 }
+.tab-content{
+  width: 90%;
+}
 .tabs {
   display: flex;
   list-style: none;
-  border-bottom: 5px solid transparent;
-  text-align: center;
+  /* border-bottom: 5px solid transparent;
+  text-align: center; */
 }
 .tab-item {
   min-width: 80px;
@@ -19,13 +22,20 @@
   border-top-right-radius: 5px;
   border-bottom: 5px solid transparent;
 }
+.tabs .line {
+  position: absolute;
+  left: 100px;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  border-radius: 15px;
+  background-color: #c23564;
+  transition: all 0.2s ease;
+}
 .tab-icon {
   font-size: 24px;
   width: 32px;
   top: 2px;
-}
-.tab-content{
-  width: 90%;
 }
 .tab-item:hover {
   opacity: 1;
@@ -43,10 +53,7 @@
 .tab-content-item.active {
   display: block;
 }
-.tab-content-item h2 {
-  font-size: 24px;
-  margin-bottom: 8px;
-}
+
 
 
 /* free */

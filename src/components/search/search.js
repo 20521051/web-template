@@ -1,9 +1,3 @@
-import {swapJS} from "/assets/script/main.js"
-window.onload = (event) => {
-    let search = document.getElementsByClassName("search_input");
-    search.value = swapJS.outSearchText;
-    document.getElementsByClassName("search_header").innerHTML +=swapJS.outSearchText;
-  };
 const ul = document.querySelector('ul.pagination');
 let allPages = 15;
 

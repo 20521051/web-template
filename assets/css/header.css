@@ -54,7 +54,7 @@
     margin: 0;
 }
 @media  only screen and (max-width:768px) {
-    /* tablet /
+    /* tablet */
     .search_input{
         width: 40rem;
         margin-left: 20%;
@@ -68,7 +68,7 @@
 }
 
 @media  only screen and (max-width:600px) {
-    / phone */
+    /* phone */
     .search_bar{
         position: absolute;
         right: 1rem;
