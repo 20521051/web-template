@@ -1,0 +1,29 @@
+:root{
+    margin: 0;
+    padding: 0;
+}
+.maincontent{
+    display: flex;
+    background-color: #8AAAE5;
+    ;
+    color: #fff;
+}
+.helpcontent{
+    text-align: center;
+}
+.help-item_content{
+    text-align: left;
+}
+
+.help-item_content ul li{
+    font-size: 1.5rem;
+}
+
+
+h1{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2rem;
+}
