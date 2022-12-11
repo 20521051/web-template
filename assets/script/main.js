@@ -1,5 +1,5 @@
 document.querySelector(".logo").addEventListener("click",()=>{
-  document.getElementsByClassName("nav-home").click = true;
+  // document.getElementsByClassName("nav-home").click = true;
   Redirect("/index.html");
 });
 var outputSearchText;
