@@ -1,4 +1,6 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 @font-face {
     font-family: 'Inter';
     src: url(/assets/fonts/Inter.ttf);
@@ -9,19 +11,36 @@
 }
 :root{
     --hover-color:rgb(219, 216, 216);
-    --text-color: #333;
+    --text-color: #333; /* --light-text-color:#333 */
+
     --while-color: #fff;
     --black-color: #000;
-    --star-color: rgba(76, 198, 207, 0.5);
+    --start-color: rgba(76, 198, 207, 0.5);
     --end-color: rgba(63, 195, 56, 0.5);
-    
+    --footer-color:#e91e63;
+
+    --blur-color:rgba(40, 42, 54, 0.3);
+
+    --dark-color:rgb(40, 42, 54);
+
+    --font-text:'Inter', sans-serif;
+    --font-header:'DancingScript',sans-serif;
+    --font-footer:'Poppins',sans-serif;
+    --font-navbar:"Poppins" , sans-serif;
+
+    /* navbar */
+
 }
 *{
     box-sizing: inherit;
 }
+html,  body{
+    margin: 0;
+    padding: 0;
+}
 html{
     font-size: 62.5%; /* 1rem = 10px  */
-    line-height: 2rem; 
+    line-height: 2rem;
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
     color: var(--text-color);
@@ -32,17 +51,4 @@ html{
     -moz-user-select: none!important;
     -ms-user-select: none!important;
     user-select: none!important;
-}
-/* class define to responsive */
-.grid{
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-.grid__full-width{
-    width: 100%;
-}
-.grid__row{
-    display: flex;
-    flex-wrap: wrap;
 }

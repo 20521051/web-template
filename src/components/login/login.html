@@ -11,23 +11,23 @@
 </head>
 
 <body>
-    <!-- Login Page -->
     <div class="login_container">
         <div class="login_content">
             <div class="login_header">
-                <a href="#">
+                <a href="/index.html">
                     <img class="login_headerLogo" src="/assets/img/FWT.png">
                 </a>
                 <h1 class="login_headerTitle">Đăng nhập vào PWT</h1>
             </div>
             <div class="login_body">
                 <div class="login_mainStep">
-                    <button class="login_button button_personal" href="#">
+                    <a class="login_button button_personal" style="text-decoration: none;color: var(--text-color);"
+                    href="/src/components/account-login/account-login.html">
                         <img class="login_buttonIcon" width="30"
                             src="https://accounts.fullstack.edu.vn/assets/images/signin/personal-18px.svg"
                             alt="Tiếp tục với personal">
                         <span class="login_buttonContent">Sử dụng email / số điện thoại</span>
-                    </button>
+                    </a>
                     <button class="login_button button_facebook" href="#">
                         <img class="login_buttonIcon" width="30"
                             src="https://accounts.fullstack.edu.vn/assets/images/signin/facebook-18px.svg"
@@ -46,18 +46,18 @@
                         <span class="login_buttonContent">Tiếp tục với Twitter</span>
                     </button>
                 </div>
-                <p class="login_dontHaveAccount">Bạn chưa có tài khoản? <a href="#">Đăng ký</a></p>
+                <p class="login_dontHaveAccount">Bạn chưa có tài khoản? <a href="/src/components/register/register.html">Đăng ký</a></p>
             </div>
             <div class="login_footer">
                 <span class="login_footerContent">
                     Việc bạn tiếp tục sử dụng trang web này đồng nghĩa bạn đồng ý với
-                    <a href="#"><br>Điều khoản sử dụng</a> của chúng tôi.
+                    <a target="_blank" href="/assets/file/DIEU_KHOAN_SU_DUNG.pdf"><br>Điều khoản sử dụng</a> của chúng tôi.
                 </span>
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="/src/components/login/login.js"></script>
-    <!-- Register Page -->
+
+    <script src="/src/components/login/login.js"></script>
 
 </body>
 

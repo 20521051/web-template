@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWT | Pro Web template</title>
+
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="/src/components/help/help.css">
+
+</head>
+
+<body>
+    <div id="main">
+        <nav class="sidebar open">
+            <div class="logo-details">
+                <span class="logo">
+                    <img src="/assets/img/FWT-mini.png"></img>
+                    <div class="logo_name">Pro Web Template</div>
+                </span>
+                <i class='bx bx-menu' id="btn"></i>
+            </div>
+            <ul class="nav-list">
+
+                <li>
+                    <a href="/index.html" class="nav-home">
+                        <i class='bx bxs-home '></i>
+
+                        <span class="links_name">Home</span>
+                    </a>
+                    <span class="tooltip">Home</span>
+                </li>
+
+                <li>
+                    <a href="/src/components/product/product.html">
+                        <i class='bx bxs-store '></i>
+                        <span class="links_name">Shop</span>
+                    </a>
+                    <span class="tooltip">Shop</span>
+                </li>
+
+
+                <li>
+                    <a href="/src/components/order/order.html">
+                        <i class='bx bx-cart-alt'></i>
+                        <span class="links_name">Order</span>
+                    </a>
+                    <span class="tooltip">Order</span>
+                </li>
+
+                <!-- <li>
+                        <a href="#">
+                            <i class='bx bxs-bell'></i>
+                            <span class="links_name">Notification</span>
+                        </a>
+                        <span class="tooltip">Notification</span>
+                    </li> -->
+                <div class="h_h">
+
+                    <li>
+                        <a href="/src/components/help/help.html">
+                            <i class='bx bxs-help-circle'></i>
+                            <span class="links_name">Help</span>
+                        </a>
+                        <span class="tooltip">Help</span>
+                    </li>
+                </div>
+
+                <li class="profile">
+                    <div class="profile-details">
+                        <img src="/assets/img/logo.png" alt="profileImg">
+                        <div class="name_job">
+                            <div class="name">Group 7</div>
+                            <div class="job">Web designer</div>
+                        </div>
+                    </div>
+                    <i class='bx bx-log-out' id="log_out"></i>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="home">
+            <header class="header">
+                <div class="container_h">
+                    <div class="r_m">
+                        <div class="search_bar">
+                            <div class="search_icon">
+                                <img src="/assets/img/search-logo.png" alt="search-icon">
+                            </div>
+                            <input type="search" class="search_input" spellcheck="false"
+                                placeholder="Tìm kiếm tên, dạng, thể loại... của template" onsearch="searchFunction()">
+                        </div>
+                        <div>
+                            <a href="/src/components/login/login.html" class="login_button">
+                                Login
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <div class="maincontent">
+                <div class="help">
+                    <header class="help_header">
+                        <h1>Chúng tôi có thể giúp gì cho bạn?</h1>
+                    </header>
+                    <div class="help_content">
+                        <div class="help-item1">
+                            <header class="help-item_header">
+                                <h3>Bắt đầu với Pro Web TemPlate</h3>
+                            </header>
+                            <div class="help-item_content">
+                                <ul>
+                                    <li>
+                                        <span>Tải xuống Website template</span>
+                                        <br><span>Tạo thiết kế trang web </span>
+                                        <br><span>Đặt Pro Web TemPlate làm trình duyệt mặc định</span>
+                                        <br><span>Đăng xuất khỏi Pro Web Template</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="help-item2">
+                            <header class="help-item_header">
+                                <h3>Tạo và cá nhân hóa hồ sơ </h3>
+                            </header>
+                            <div class="help-item_content">
+                                <ul>
+                                    <li>
+                                        <span>Nhập dấu trang và chế độ cài đặt</span>
+                                        <br><span>Cá nhân hóa Trang thẻ mới của bạn trong Pro Web Template </span>
+                                        <br><span>Mở nhanh Pro Web Template trên điện thoại hoặc máy tính bảng</span>
+                                        <br><span>Mẹo và thủ thật dành cho Pro Web Template</span>
+                                        <br><span>Sử dụng mật khẩu trên nhiều thiết bị</span>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="help-item3">
+                            <header class="help-item_header">
+                                <h3>Xóa lịch sử và hoạt động của bạn </h3>
+                            </header>
+                            <div class="help-item_content">
+                                <ul>
+                                    <li>
+                                        <span>Xóa lịch sử tìm kiếm</span>
+                                        <br><span>Xóa sản phẩm đã đặt hàng </span>
+                                        <br><span>Xem nhật ký hoạt động mua hàng của bạn</span>
+                                        <br><span>Quản lý mật khẩu</span>
+                                        <br><span>Khóa hoặc xóa tài khoản trên điện thoại hoặc máy tính bị mất</span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="help-item4">
+                            <header class="help-item_header">
+                                <h3>Khắc phục sự cố </h3>
+                            </header>
+                            <div class="help-item_content">
+                                <ul>
+                                    <li>
+                                        <span>Giúp website chạy tốt hơn</span>
+                                        <br><span>Khắc phục lỗi kết nối </span>
+                                        <br><span>Khắc phục sự cố với nội dung web</span>
+                                        <br><span>Tự động bắt đầu hoặc dừng báo cáo lỗi và sự cố</span>
+                                        <br><span>Báo cáo sự cố hoặc gửi phải hồi về Pro web Template</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>PWT</h4>
+                            <ul>
+                                <li><a href="">About us</a></li>
+                                <li><a href="">Our services</a></li>
+                                <li><a href="">Privacy policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Get Help</h4>
+                            <ul>
+                                <li><a href="">FAQ</a></li>
+                                <li><a href="">Shipping</a></li>
+                                <li><a href="">Returns</a></li>
+                                <li><a href="">Order Status</a></li>
+                                <li><a href="">Payment options</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Product</h4>
+                            <ul>
+                                <li><a href="">Paid product</a></li>
+                                <li><a href="">Free product</a></li>
+                                <li><a href="">Featured products</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Follow Us</h4>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/profile.php?id=100029557625178"><i
+                                        class="fa-brands fa-facebook" style="font-size: 2em"></i></a>
+                                <a href="https://twitter.com/?lang=vi"><i class="fa-brands fa-twitter"
+                                        style="font-size: 2em"></i></a>
+                                <a href="https://www.instagram.com/imminhtu_/"><i class="fa-brands fa-instagram"
+                                        style="font-size: 2em"></i></a>
+                                <a href="https://discord.com/"><i class="fa-brands fa-discord"
+                                        style="font-size: 2em"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </div>
+
+    <script src="/assets/script/main.js"></script>
+    <script src="https://kit.fontawesome.com/682da8c922.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,3 @@
+JoeBlog
+
+Một trang blog với giao diện nhẹ nhàng, được sắp xếp ngăn nắp và sang trọng. Đây là một sự lựa chọn hợp lý và vừa tầm với đầy đủ chức năng cần thiết cho khách hàng muốn sử dụng một nơi để chia sẻ về những trải nghiệm qua blog cá nhân.

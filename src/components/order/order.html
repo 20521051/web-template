@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWT | Order</title>
+
+
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+
+    <link rel="stylesheet" href="/src/components/order/order.css">
+</head>
+
+<body>
+    <div id="main">
+        <nav class="sidebar open">
+            <div class="logo-details">
+                <span class="logo">
+                    <img src="/assets/img/FWT-mini.png"></img>
+                    <div class="logo_name">Pro Web Template</div>
+                </span>
+                <i class='bx bx-menu' id="btn"></i>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <a href="/index.html" class="nav-home">
+                        <i class='bx bxs-home '></i>
+
+                        <span class="links_name">Home</span>
+                    </a>
+                    <span class="tooltip">Home</span>
+                </li>
+                <li>
+                    <a href="/src/components/product/product.html">
+                        <i class='bx bxs-store '></i>
+                        <span class="links_name">Shop</span>
+                    </a>
+                    <span class="tooltip">Shop</span>
+                </li>
+                <div class="h_h">
+                    <li>
+                        <a href="/src/components/order/order.html">
+                            <i class='bx bx-cart-alt'></i>
+                            <span class="links_name">Order</span>
+                        </a>
+                        <span class="tooltip">Order</span>
+                    </li>
+                </div>
+                <!-- <li>
+                    <a href="#">
+                        <i class='bx bxs-bell'></i>
+                        <span class="links_name">Notification</span>
+                    </a>
+                    <span class="tooltip">Notification</span>
+                </li> -->
+
+                <li>
+                    <a href="/src/components/help/help.html">
+                        <i class='bx bxs-help-circle'></i>
+                        <span class="links_name">Help</span>
+                    </a>
+                    <span class="tooltip">Help</span>
+                </li>
+
+                <li class="profile">
+                    <div class="profile-details">
+                        <img src="/assets/img/logo.png" alt="profileImg">
+                        <div class="name_job">
+                            <div class="name">Group 7</div>
+                            <div class="job">Web designer</div>
+                        </div>
+                    </div>
+                    <i class='bx bx-log-out' id="log_out"></i>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="home">
+            <header class="header">
+                <div class="container_h">
+                    <div class="r_m">
+                        <div class="search_bar">
+                            <div class="search_icon">
+                                <img src="/assets/img/search-logo.png" alt="search-icon">
+                            </div>
+                            <input type="search" class="search_input" spellcheck="false"
+                                placeholder="Tìm kiếm tên, dạng, thể loại... của template" onsearch="searchFunction()">
+                        </div>
+                        <div>
+                            <a href="/src/components/login/login.html" class="login_button">
+                                Login
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <div class="maincontent">
+                <div class="order">
+                    <header class="order_header">
+                        <h1>Thiết kế theo yêu cầu</h1>
+                        <span>Thiết kế website theo yêu cầu là một trong những giải pháp thiết kế website hỗ trợ kinh doanh trực tuyến được nhiều doanh nghiệp lựa chọn nhất hiện nay. và Pro Web TemPlate  đem đễn cho khách hàng không chỉ 1 website đơn thuần mà là  sở hữu một website THỰC SỰ tối ưu về TRẢI NGHIỆM người dùng ( UX, UI), và về SEO, về tốc độ . Có như vậy mới TIẾT KIỆM được về lâu dài. Cùng với các gói thiết kế website theo mẫu, thiết kế web theo yêu cầu tại Pro Web Template triển khai trên tất cả các lĩnh vực thuộc các ngành nghề như kinh doanh điện thoại, báo, bất động sản, đồng hồ...với giao diện đẹp, trải nghiệm người dùng cao. Luôn cập nhật các công nghệ mới nhất từ google, tính năng ưu biệt, chuẩn SEO mới của một website chuyên nghiệp theo đúng những gì mà đơn vị kinh doanh mong muốn. Đến với thiết kế Pro WebTemPlate khách hàng làm lại web nhưng vẫn bảo toàn được SEO, top.. Pro WebTemPlate luôn có đội nghiên cứu và phát triển công nghệ mới: Nâng cao chât lượng và Song hành cùng sự phát triển của khách hàng. </span>
+                    </header>
+                    <div class="order_content">
+                        <div class="order-item1">
+                            <header class="order-item_header">
+                                <h3>1. Những lý do nên thiết kế website theo yêu cầu</h3>
+                            </header>
+                            <div class="order-item_content">
+                                <span>Vì sao gói thiết kế website theo yêu cầu ngày càng phổ biến và được nhiều doanh nghiệp ưa chuộng nhất hiện nay? Những lý do dưới đây sẽ giúp bạn lý giải điều đó.
+                                    <ul>
+                                        <li>
+                                            <span>+ Với mỗi thiết kế website theo yêu cầu doanh nghiệp sẽ được lựa chọn giao diện web theo ý mình mong muốn cũng như những tính năng theo yêu cầu cần thiết cho website doanh nghiệp thuộc ngành nghề, lĩnh vực nhất định. Mỗi khách hàng có thể tiếp cận website doanh nghiệp khác cùng lĩnh vực để tham khảo hoặc nhờ đến sự tư vấn của các chuyên gia thiết kế website để tạo nên một trang web độc đáo, ấn tượng với đầy đủ các tính năng thu hút người dùng.</span>
+                                            <br> <span>+  Khi thiết kế theo yêu cầu, trang web doanh nghiệp sẽ đảm bảo được tốc độ truy cập nhanh, phù hợp với mọi thiết bị di động bằng công nghệ thiết kế website Responsive và trình duyệt mang đến cho người dùng, khách hàng những trải nghiệm tuyệt vời nhất.</span>
+                                            <br> <span>+ Đặc biệt khi sở hữu một trang web theo yêu cầu với giao diện cùng các tính năng riêng biệt một cách khoa học, hợp lý, độc đáo và ấn tượng sẽ tạo lợi thế cho doanh nghiệp nâng cao thứ hạng website trên công cụ tìm kiếm, mang đến cơ hội tiếp cận khách hàng nhiều và nhanh hơn.</span>
+                                        </li>
+                                    </ul>                                   
+                            </div>
+                        </div>
+                        <div class="order-item2">
+                            <header class="order-item_header">
+                                <h3>2. Ưu điểm của gói thiết kế website theo yêu cầu tại Pro Web Template </h3>
+                            </header>
+                            <div class="order-item_content">
+                               <span>Bất cứ doanh nghiệp nào khi tiến hành thiết kế website theo yêu cầu, Pro WebTemPlate cũng luôn đảm bảo và cam kết tới quý khách hàng một trang web với giao diện đẹp cùng các tính năng đầy đủ như trên. Bên cạnh đó những lợi thế dưới đây là điều bạn không thể bỏ qua khi sử dụng và trải nghiệm dịch vụ khách hàng của Pro WebTemPlate:</span>
+                               <ul>
+                                <li>
+                                    <span>-  Đội ngũ thiết kế website dày dặn kinh nghiệm trong thiết kế hàng ngàn website doanh nghiệp thuộc nhiều lĩnh vực, ngành nghề khác nhau sẽ nắm bắt được website của bạn nên và cần có những gì? Đó là nền tảng để chúng tôi tư vấn và hỗ trợ tận tình cho mỗi yêu cầu thiết kế website.</span>
+                                    <br> <span>-  Cam kết thời gian bàn giao thiết kế website theo yêu cầu chuyên nghiệp, chất lượng đúng như những gì đã thỏa thuận và ký kết trên hợp đồng.</span>
+                                    <br> <span>-  Dịch vụ hỗ trợ khách hàng sau thiết kế luôn sẵn sàng, diễn ra 24/7 nhằm giúp website doanh nghiệp vận hành một cách tốt nhất.</span>
+                                </li>
+                               </ul>
+                            </div>
+                        </div>
+                        <div class="order-item3">
+                            <header class="order-item_header">
+                                <h3>3. Quy trình thiết kế website theo yêu cầu tại Pro Web Template. </h3>
+                            </header>
+                            <div class="order-item_content">
+                                <span>Để mang đến cho khách hàng, doanh nghiệp những sản phẩm thiết kế website theo yêu cầu chất lượng chuyên nghiệp nhất, Pro WebTemPlate áp dụng một quy trình thiết kế chặt chẽ với 8 bước cơ bản như sau:</span>
+                                <br><span>Bước 1: Tiếp nhận yêu cầu từ khách hàng thông qua hotline 1900 1010 hoặc các tài khoản chúng tôi để phía dưới trang web.
+                                </span>
+                                <br><span>Bước 2: Đánh giá yêu cầu và tư vấn khách hàng cụ thể.
+                                </span>
+                                <br><span>Bước 3: Thiết lập hồ sơ xây dựng trang web.
+                                </span>
+                                <br><span>Bước 5: Thiết kế cơ sở dữ liệu và lập trình tính năng.
+                                </span>
+                                <br><span>Bước 6: Phát hành bản demo và kiểm thử.
+                                </span>
+                                <br><span>Bước 7: Bàn giao và nghiệm thu
+                                </span>
+                                <br><span>Bước 8:  Dịch vụ bảo hành - bảo trì website.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>PWT</h4>
+                            <ul>
+                                <li><a href="">About us</a></li>
+                                <li><a href="">Our services</a></li>
+                                <li><a href="">Privacy policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Get Help</h4>
+                            <ul>
+                                <li><a href="">FAQ</a></li>
+                                <li><a href="">Shipping</a></li>
+                                <li><a href="">Returns</a></li>
+                                <li><a href="">Order Status</a></li>
+                                <li><a href="">Payment options</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Product</h4>
+                            <ul>
+                                <li><a href="">Paid product</a></li>
+                                <li><a href="">Free product</a></li>
+                                <li><a href="">Featured products</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Follow Us</h4>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/profile.php?id=100029557625178"><i
+                                        class="fa-brands fa-facebook" style="font-size: 2em"></i></a>
+                                <a href="https://twitter.com/?lang=vi"><i class="fa-brands fa-twitter"
+                                        style="font-size: 2em"></i></a>
+                                <a href="https://www.instagram.com/imminhtu_/"><i class="fa-brands fa-instagram"
+                                        style="font-size: 2em"></i></a>
+                                <a href="https://discord.com/"><i class="fa-brands fa-discord"
+                                        style="font-size: 2em"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </div>
+
+    <script src="/assets/script/main.js"></script>
+    <script src="https://kit.fontawesome.com/682da8c922.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="/src/components/order/order.js"></script>
+</body>
+
+</html>

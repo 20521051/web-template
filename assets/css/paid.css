@@ -1,0 +1,126 @@
+:root{
+    --trans-hidden:0.4s linear;
+    --button-visibility:hidden;
+    --border-radius-image:5rem;
+    --product-image:url(/assets/img/screen.jpg);
+}
+
+.paid{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* có cách khác nên chỉnh sau */
+    margin-bottom: 5rem;
+ 
+}
+.paid_header{
+    flex: 2;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 1000;
+}
+.grid_paid{
+    flex: 7;
+    border-top: 2px solid var(--hover-color);
+    background-color: var(--while-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.paid_product_header{
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.paid_product_content{
+    width: 100%;
+}
+.paid_product{
+    width: 35rem;
+    height: 28rem;
+    margin: 1.8rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.paid_product_img{
+    border: 2px solid var(--hover-color);
+    border-radius: var(--border-radius-image);
+    width: 100%;
+    height: 75%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--product-image) no-repeat center; 
+    background-size: 100% 100%;
+}
+.paid_product_button{
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    border-radius: var(--border-radius-image);
+    background-color: var(--blur-color);
+    border: none;
+    opacity: 0;
+}
+.paid_product_button a{
+    color: var(--text-color);
+    text-decoration: none;
+    text-align: center;
+    padding: 4%;
+    font-size: 1.5rem;
+    border-radius: var(--border-radius-image);
+    background-color: var(--while-color);
+    opacity: 0;
+    text-decoration: none;
+    text-align: center;
+}
+.paid_product_img:hover .paid_product_button a{
+    opacity: 1;
+}
+
+.paid_product_img:hover .paid_product_button{
+    opacity: 1;
+}
+@media  only screen and (max-width:768px) {
+    /* tablet */
+    .scroll_paid{
+        -webkit-overflow-scrolling:touch;
+        overflow-x: auto;
+        border-bottom: 2px solid var(--hover-color);
+    }
+    .grid_paid{
+        flex-wrap: nowrap;
+        width: 400%;
+    }
+}
+@media  only screen and (max-width:600px) {
+    /* phone */
+    .paid_header{
+        border-bottom: 2px solid var(--hover-color);
+        margin-bottom: 0;
+    }
+    .paid{
+        height: 70rem;
+    }
+    .paid_product{
+        width: 27rem;
+        height: 20rem;
+    }
+    .scroll_paid{
+        flex: 15;
+        border-bottom: none;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .grid_paid{
+        border-top: none;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+        height: 210%;
+    }
+}
